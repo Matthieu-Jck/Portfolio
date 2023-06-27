@@ -27,7 +27,7 @@
 				},
 				{
 					"name": "MatLab",
-					"logo": "resources/images/skills/MatLab.svg",
+					"logo": "resources/images/skills/Matlab.svg",
 					"link": "https://fr.mathworks.com/products/matlab.html"
 				},
 				{
@@ -104,7 +104,7 @@
 				},
 				{
 					"name": "ExpressJS",
-					"logo": "resources/images/skills/ExpressJS.webp",
+					"logo": "resources/images/skills/Express.svg",
 					"link": "http://expressjs.com"
 				},
 				{
