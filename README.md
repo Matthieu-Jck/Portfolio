@@ -2,13 +2,13 @@
 
 <br>
 
-My personal website.
+My personal website, used as a portfolio and maybe one day, a blog.
 
 <br>
 
 # Access
 
-* The website is online at the address : **[](TODO)**.
+* The website is online at the address : **[My Website](https://matthieu-jck.github.io/Portfolio/)**.
 
 <br>
 

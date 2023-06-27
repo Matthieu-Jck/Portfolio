@@ -127,6 +127,11 @@
 					"name": "Figma",
 					"logo": "resources/images/skills/Figma.svg",
 					"link": "https://www.figma.com/"
+				},
+				{
+					"name": "MidJourney",
+					"logo": "resources/images/skills/MidJourney.svg",
+					"link": "https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F"
 				}
 			]
 		},
@@ -134,11 +139,6 @@
 			"name" : "Machine Learning",
 			"skills" :
 			[
-				{
-					"name": "Theory",
-					"logo": "resources/images/skills/Theory.svg",
-					"link": "https://github.com/angeluriot/Neural_network"
-				},
 				{
 					"name": "Tensorflow",
 					"logo": "resources/images/skills/Tensorflow.svg",

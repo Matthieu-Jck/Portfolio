@@ -14,11 +14,9 @@
 			],
 			"links":
 			[
-				"https://www.angeluriot.com/",
-				"https://github.com/angeluriot/Portfolio",
-				"https://www.angeluriot.com/"
+				"https://matthieu-jck.github.io/Portfolio/"
 			],
-			"video": "resources/videos/projects/Portfolio.mp4",
+			"video": "none",
 			"image": "resources/images/projects/Portfolio.webp",
 			"logo": "resources/images/projects/Portfolio.svg",
 			"categories": ["Personal", "Web"]
