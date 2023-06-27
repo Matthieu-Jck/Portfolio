@@ -1,0 +1,108 @@
+@font-face
+{
+	font-family: raleway_bold;
+	src: url("../resources/fonts/raleway/Raleway-Bold.ttf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: raleway_semi_bold;
+	src: url("../resources/fonts/raleway/Raleway-SemiBold.ttf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: raleway_medium;
+	src: url("../resources/fonts/raleway/Raleway-Medium.ttf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: calibre_semi_bold;
+	src: url("../resources/fonts/calibre/CalibreSemibold.otf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: calibre_medium;
+	src: url("../resources/fonts/calibre/CalibreMedium.otf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: calibre_regular;
+	src: url("../resources/fonts/calibre/CalibreRegular.otf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: calibre_light;
+	src: url("../resources/fonts/calibre/CalibreLight.otf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: proxima_nova_bold;
+	src: url("../resources/fonts/proxima_nova/ProximaNovaBold.otf");
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: proxima_nova_semi_bold;
+	src: url("../resources/fonts/proxima_nova/ProximaNovaSemibold.otf");
+	font-display: swap;
+}
+
+body
+{
+
+	--header-color:#116465;
+	--header-links-color:#FFCB9A;
+	--buttons-hover-color: #EAE0C8;
+	--hover-color: #4682B4;
+	--section-color-1:#D9B08C;
+	--section-color-2:#116465;
+	--footer-color:#ff8579;
+
+	--title-1-color:#116465;
+	--title-2-color:#D9B08C;
+	--welcome-color:#EAE0C8;
+	--name-color:#fec5a2;
+	--bio-color:#D1E8E2;
+	--links-color:#197779;
+	--border-color: #004B49;
+	--text-color:#2C3531;
+
+	/**/
+	
+	--light-sapphire: #5bbecf;
+	--dark-sapphire: #2C3531;
+	--title-sapphire: #116465;
+	--peach-pink: #ffafa1;
+	--peach-orange: #fec5a2;
+	--peach-white: #fec5a2;
+	--peach-heavy: #ff8579;
+	--pale-yellow: #ffebc2;
+
+	--platinum: #D1E8E2;
+	--sand: #D9B08C;
+	--tan: #FFCB9A;
+	
+    --steel-blue: #4682B4;
+    --pearl: #EAE0C8;
+    --mauve-taupe: #915F6D;
+	--mauve: #a04e65;
+    --spanish-gray: #989898;
+
+	--emerald: #50C878;
+	--deep-jungle-green: #004B49;
+	--forest-green: #228B22;
+}
