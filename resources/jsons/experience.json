@@ -2,60 +2,56 @@
 	"experience":
 	[
 		{
-			"date": 2022,
-			"type": "Software engineer intern",
-			"title": "Fitthree Pte Ltd",
-			"description": "Design a system that establish optimized delivery routes for the company's drivers based on a list of orders and a set of constraints. The generated routes will be fed to the tracking management system.",
+			"date": "2021-2022",
+			"type": "Software Engineer - Professional Contract",
+			"title": "Capgemini",
+			"description": "Aerospatial: Developping the ground segment of a satellite mission for Earth's observation.",
 			"tags":
 			[
-				{ "name": "C#", "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" },
-				{ "name": "SQL", "url": "https://sql.sh" },
-				{ "name": "jQuery", "url": "https://jquery.com/" },
-				{ "name": "Bootstrap", "url": "https://getbootstrap.com/" }
+				{ "name": "Java", "url": "https://www.java.com/en/" },
+				{ "name": "Eclipse", "url": "https://eclipseide.org/"},
+				{ "name": "WildFly / JBoss", "url": "https://www.wildfly.org/" },
+				{ "name": "PostGreSQL", "url": "https://www.postgresql.org/" },
+				{ "name": "Hibernate", "url": "https://hibernate.org/" },
+				{ "name": "OpenLDAP","url": "https://en.wikipedia.org/wiki/OpenLDAP"}
 			],
-			"link": "https://fitthree.com/",
+			"link": "https://www.capgemini.com/",
 			"video": "none",
-			"image": "resources/images/experience/Fitthree.webp"
+			"image": "resources/images/experiences/Capgemini.svg"
 		},
 		{
-			"date": 2019,
-			"type": "Developer intern",
-			"title": "C.E.A. Paris-Saclay",
-			"description": "A two months internship at the C.E.A. Paris-Saclay, my assignment was to program a computer simulation predicting the behavior of neutrons in the core of a nuclear reactor.",
+			"date": "2022-2023",
+			"type": "Software Engineer",
+			"title": "Infotel",
+			"description": "Aeronautics: Development of Orlando Suite, a Web and iOS solution for airlines management.",
 			"tags":
 			[
-				{ "name": "C++", "url": "https://en.wikipedia.org/wiki/C%2B%2B" }
+				{ "name": "Java", "url": "https://www.java.com/en/" },
+				{ "name": "Angular", "url": "https://angular.io/" },
+				{ "name": "MongoDB", "url": "https://www.mongodb.com/" },
+				{ "name": "Scrum", "url": "https://www.scrum.org/" },
+				{ "name": "NodeJS", "url": "https://nodejs.org/en" }
 			],
-			"link": "https://www.cea.fr/english",
+			"link": "https://infotel-consulting.co.uk/",
 			"video": "none",
-			"image": "resources/images/experience/Cea.webp"
+			"image": "resources/images/experience/Infotel.svg"
 		},
 		{
-			"date": 2021,
-			"type": "Research Intern",
-			"title": "C.E.E.S.A.R.",
-			"description": "A one month worker internship where I created a database of autopsy reports and modified high speed crash test footage.",
+			"date": "2023",
+			"type": "Fullstack Engineer",
+			"title": "Infotel",
+			"description": "Research: Development of a Web application for CNRS's management and recrutement.",
 			"tags":
 			[
-				{ "name": "After Effects", "url": "https://www.adobe.com/products/aftereffects.html" }
+				{ "name": "Java", "url": "https://www.java.com/en/" },
+				{ "name": "Angular", "url": "https://angular.io/" },
+				{ "name": "Material Design", "url": "https://material.angular.io/"},
+				{ "name": "PostGreSQL", "url": "https://www.postgresql.org/" },
+				{ "name": "NodeJS", "url": "https://nodejs.org/en" }
 			],
-			"link": "https://www.ceesar.fr/en/",
+			"link": "https://infotel-consulting.co.uk/",
 			"video": "none",
-			"image": "resources/images/experience/Ceesar.webp"
-		},
-		{
-			"date": 2015,
-			"type": "Video producer",
-			"title": "DIMENSION",
-			"description": "I create videos for a popular science program on the Internet called DIMENSION. It's a 5 minutes animated video format where I talk about many topics such as astrophysics, mathematics or computer science.",
-			"tags":
-			[
-				{ "name": "After Effects", "url": "https://www.adobe.com/products/aftereffects.html" },
-				{ "name": "Illustrator", "url": "https://www.adobe.com/products/illustrator.html" }
-			],
-			"link": "https://www.youtube.com/c/DIMENSI0N",
-			"video": "resources/videos/experience/Dimension.mp4",
-			"image": "resources/images/experience/Dimension.webp"
+			"image": "resources/images/experience/Infotel.svg"
 		}
 	]
 }
