@@ -1,11 +1,11 @@
 #experience_section
 {
-	background-color: var(--section-items-color);
+	background-color: var(--section-color-2);
 }
 
 .experience_end
 {
-	background-color: var(--section-items-color);
+	background-color: var(--section-color-2);
 }
 
 #experience_section .section_title

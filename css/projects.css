@@ -1,11 +1,11 @@
 #projects_section
 {
-	background-color: var(--section-items-color);
+	background-color: var(--section-color-2);
 }
 
 .projects_end
 {
-	background-color: var(--section-items-color);
+	background-color: var(--section-color-2);
 }
 
 #projects_section .section_title
@@ -43,7 +43,7 @@
 {
 	color: var(--links-color);
 	font-family: raleway_semi_bold;
-	font-size: 15px;
+	font-size: 16px;
 	cursor: pointer;
 	border-radius: 100px;
 	padding: 9px 18px 9px 18px;
@@ -59,7 +59,7 @@
 #projects_section .sort_choices .choice.selected
 {
 	color: var(--section-items-color);
-	background-color: var(--links-color);
+	background-color: var(--selected-button-color);
 	cursor: default;
 	pointer-events: none;
 }

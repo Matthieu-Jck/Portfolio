@@ -69,7 +69,7 @@ body
 	--buttons-hover-color: #EAE0C8;
 	--hover-color: #4682B4;
 	--section-color-1:#D9B08C;
-	--section-color-2:#116465;
+	--section-color-2:#020202;
 	--footer-color:#ff8579;
 
 	--title-1-color:#116465;
@@ -85,22 +85,6 @@ body
 	--text-color-2:#EAE0C8;
 
 	--section-items-color:#197779;
+	--selected-button-color: #D1E8E2; 
 
-	/**/
-	
-	--light-sapphire: #5bbecf;
-	--dark-sapphire: #2C3531;
-	--peach-pink: #ffafa1;
-	--peach-orange: #fec5a2;
-	--peach-white: #fec5a2;
-	--peach-heavy: #ff8579;
-	--pale-yellow: #ffebc2;
-	--tan: #FFCB9A;
-	
-    --steel-blue: #4682B4;
-    --spanish-gray: #989898;
-
-	--emerald: #50C878;
-	--deep-jungle-green: #004B49;
-	--forest-green: #228B22;
 }
