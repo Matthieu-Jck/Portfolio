@@ -17,7 +17,7 @@
 				"https://matthieu-jck.github.io/Portfolio/"
 			],
 			"video": "none",
-			"image": "none",
+			"image": "resources/images/projects/Portfolio.svg",
 			"logo": "resources/images/projects/Portfolio.svg",
 			"categories": ["Personal", "Web"]
 		}
