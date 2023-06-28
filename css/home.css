@@ -68,3 +68,20 @@
 {
 	margin-top: 40px;
 }
+
+.gear {
+    width: 800px; 
+    height: 800px;
+    opacity: 0.8;
+    position: absolute;
+    left: 1620px;
+    top: 200px;
+}
+
+
+.content-gear-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
