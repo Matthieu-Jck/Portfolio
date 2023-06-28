@@ -36,11 +36,6 @@
 					"link": "https://en.wikipedia.org/wiki/C%2B%2B"
 				},
 				{
-					"name": "CMake",
-					"logo": "resources/images/skills/CMake.svg",
-					"link": "https://cmake.org/"
-				},
-				{
 					"name": "Git",
 					"logo": "resources/images/skills/Git.svg",
 					"link": "https://git-scm.com/"
@@ -72,6 +67,11 @@
 					"link": "https://en.wikipedia.org/wiki/JavaScript"
 				},
 				{
+					"name": "Angular",
+					"logo": "resources/images/skills/Angular.svg",
+					"link": "https://angular.io/"
+				},
+				{
 					"name": "TypeScript",
 					"logo": "resources/images/skills/TypeScript.svg",
 					"link": "https://www.typescriptlang.org"
@@ -97,6 +97,11 @@
 			"name" : "Back-end Web",
 			"skills" :
 			[
+				{
+					"name": "Java",
+					"logo": "resources/images/skills/Java.svg",
+					"link": "https://en.wikipedia.org/wiki/Java_(programming_language)"
+				},
 				{
 					"name": "NodeJS",
 					"logo": "resources/images/skills/NodeJS.svg",
