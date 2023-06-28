@@ -22,7 +22,7 @@
 	right: 10px;
 	padding: 20px 20px 20px 20px;
 	cursor: pointer;
-	stroke: var(--tan);
+	stroke: var(--header-links-color);
 	stroke-width: 10px;
 	stroke-linecap: round;
 	stroke-linejoin: round;
@@ -56,7 +56,7 @@
 	padding: 15px 22.5px;
 	font-family: raleway_semi_bold;
 	font-size: 20px;
-	color: var(--tan);
+	color: var(--header-links-color);
 	text-decoration: none;
 }
 

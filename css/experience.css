@@ -1,16 +1,16 @@
 #experience_section
 {
-	background-color: var(--mauve_taupe);
+	background-color: var(--section-items-color);
 }
 
 .experience_end
 {
-	background-color: var(--mauve_taupe);
+	background-color: var(--section-items-color);
 }
 
 #experience_section .section_title
 {
-	color: var(--tan);
+	color: var(--title-2-color);
 	margin-bottom: clamp(50px, 6vw, 80px);
 }
 
@@ -34,7 +34,7 @@
 
 #experience_section .sort_choices .label
 {
-	color: var(--tan);
+	color: var(--title-2-color);
 	font-family: raleway_semi_bold;
 	font-size: 17px;
 }
@@ -53,12 +53,12 @@
 
 #experience_section .sort_choices .choice:hover
 {
-	background-color: var(--platinum);
+	background-color: var(--bio-color);
 }
 
 #experience_section .sort_choices .choice.selected
 {
-	color: var(--mauve_taupe);
+	color: var(--section-items-color);
 	background-color: var(--links-color);
 	cursor: default;
 	pointer-events: none;
@@ -192,7 +192,7 @@
 {
 	font-family: calibre_semi_bold;
 	font-size: 32px;
-	color: var(--tan);
+	color: var(--title-2-color);
 	text-decoration: none;
 	margin-bottom: 12px;
 	margin-left: 15px;
@@ -212,7 +212,7 @@
 
 #experience_section .job_text .text
 {
-	background-color: var(--mauve);
+	background-color: var(--section-items-color);
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 	border-radius: 15px;
 	padding: 25px 25px 25px 25px;
@@ -230,7 +230,7 @@
 	font-family: calibre_regular;
 	font-size: 20px;
 	text-align: start;
-	color: var(--pearl);
+	color: var(--text-color-2);
 }
 
 #experience_section .inverted .job_text .text p
@@ -329,7 +329,7 @@
 	position: absolute;
 	text-align: center;
 	bottom: -45px;
-	color: var(--mauve_taupe);
+	color: var(--section-items-color);
 	padding: 6px 12px 6px 12px;
 	background-color: var(--color);
 	font-family: raleway_bold;
@@ -484,7 +484,7 @@
 
 	#experience_section .job_text .text p
 	{
-		color: var(--tan);
+		color: var(--title-2-color);
 	}
 
 	#experience_section .job_text .tags

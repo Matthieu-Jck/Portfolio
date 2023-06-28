@@ -55,7 +55,7 @@ ol
 {
 	font-family: proxima_nova_semi_bold;
 	font-size: 16px;
-	color: var(--pearl);
+	color: var(--text-color-2);
 	text-align: center;
 	line-height: 22px;
 }
@@ -174,7 +174,7 @@ ol
 
 .button:hover
 {
-	background-color: var(--platinum);
+	background-color: var(--bio-color);
 }
 
 .button .button_arrow

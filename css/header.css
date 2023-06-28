@@ -76,7 +76,7 @@
 	padding: 10px 15px;
 	font-family: raleway_semi_bold;
 	font-size: 15px;
-	color: var(--tan);
+	color: var(--header-links-color);
 	text-decoration: none;
 }
 
@@ -113,7 +113,7 @@
 	padding: 20px 20px 20px 20px;
 	margin-right: -20px;
 	cursor: pointer;
-	stroke: var(--tan);
+	stroke: var(--header-links-color);
 	stroke-width: 10px;
 	stroke-linecap: round;
 	stroke-linejoin: round;
@@ -134,7 +134,7 @@
 }
 
 #header .home a.active {
-    color: var(--dark-sapphire);
+    color: var(--header-color);
 }
 
 #header .home a.active:hover {

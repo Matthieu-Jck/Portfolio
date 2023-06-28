@@ -74,32 +74,30 @@ body
 
 	--title-1-color:#116465;
 	--title-2-color:#D9B08C;
-	--welcome-color:#EAE0C8;
+	
 	--name-color:#fec5a2;
-	--bio-color:#D1E8E2;
+	--welcome-color:#D1E8E2;
+	--bio-color:#EAE0C8;
+
 	--links-color:#197779;
 	--border-color: #004B49;
-	--text-color:#2C3531;
+	--text-color-1:#2C3531;
+	--text-color-2:#EAE0C8;
+
+	--section-items-color:#197779;
 
 	/**/
 	
 	--light-sapphire: #5bbecf;
 	--dark-sapphire: #2C3531;
-	--title-sapphire: #116465;
 	--peach-pink: #ffafa1;
 	--peach-orange: #fec5a2;
 	--peach-white: #fec5a2;
 	--peach-heavy: #ff8579;
 	--pale-yellow: #ffebc2;
-
-	--platinum: #D1E8E2;
-	--sand: #D9B08C;
 	--tan: #FFCB9A;
 	
     --steel-blue: #4682B4;
-    --pearl: #EAE0C8;
-    --mauve-taupe: #915F6D;
-	--mauve: #a04e65;
     --spanish-gray: #989898;
 
 	--emerald: #50C878;

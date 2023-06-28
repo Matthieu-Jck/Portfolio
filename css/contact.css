@@ -1,6 +1,6 @@
 #contact_section
 {
-	background-color: var(--tan);
+	background-color: var(--section-color-1);
 }
 
 #contact_section .content.leaning
@@ -11,7 +11,7 @@
 
 #contact_section .section_title
 {
-	color: var(--title-sapphire);
+	color: var(--title-1-color);
 	margin-bottom: 70px;
 }
 
@@ -79,7 +79,7 @@
 {
 	font-family: proxima_nova_semi_bold;
 	font-size: 20px;
-	color: var(--title-sapphire);
+	color: var(--title-1-color);
 	white-space: nowrap;
 }
 

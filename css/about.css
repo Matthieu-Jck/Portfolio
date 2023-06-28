@@ -1,11 +1,11 @@
 #about_section
 {
-	background-color: var(--tan);
+	background-color: var(--section-color-1);
 }
 
 .about_end
 {
-	background-color: var(--tan);
+	background-color: var(--section-color-1);
 }
 
 #about_section .content
@@ -37,14 +37,14 @@
 
 #about_section .section_title
 {
-	color: var(--title-sapphire);
+	color: var(--title-1-color);
 }
 
 #about_section .about_content .p_1
 {
 	font-family: calibre_regular;
 	font-size: 20px;
-	color: var(--text-color);
+	color: var(--text-color-1);
 	line-height: 1.3;
 }
 
@@ -81,10 +81,10 @@
 
 #about_section .link
 {
-	color: var(--sand);
+	color: var(--section-color-1);
 }
 
 #about_section .link::before
 {
-	background-color: var(--sand);
+	background-color: var(--section-color-1);
 }

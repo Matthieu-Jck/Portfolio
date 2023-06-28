@@ -22,7 +22,7 @@
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	background-color: var(--mauve);
+	background-color: var(--section-items-color);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 15px;
 	transition: opacity 0.5s ease-in-out, box-shadow 0.4s ease, transform 0.4s ease !important;
@@ -110,7 +110,7 @@
 	stroke-width: 1.9px;
 	stroke-linecap: round;
 	stroke-linejoin: round;
-	stroke: var(--pearl);
+	stroke: var(--text-color-2);
 	opacity: 0.8;
 	transition: stroke 0.2s ease, opacity 0.2s ease;
 }
@@ -131,7 +131,7 @@
 {
 	font-family: calibre_semi_bold;
 	font-size: 28px;
-	color: var(--tan);
+	color: var(--title-2-color);
 	text-decoration: none;
 	margin-bottom: 12px;
 	transition: color 0.2s ease;
@@ -159,7 +159,7 @@
 	font-family: calibre_regular;
 	font-size: 20px;
 	text-align: start;
-	color: var(--pearl);
+	color: var(--text-color-2);
 	margin-bottom: 25px;
 }
 
