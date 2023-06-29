@@ -31,19 +31,17 @@ function home_animateds() {
 function home_events() {
     let rectContent = document.querySelector('#home_section .content').getBoundingClientRect();
     document.querySelector('#home_section').style.minHeight = (rectContent.height + 90) + 'px';
-
-    var gear = document.querySelector('.gear');
-    var rectGear = gear.getBoundingClientRect();
-    var centerX = rectGear.left + rectGear.width / 2;
-    var centerY = rectGear.top + rectGear.height / 2;
-
-    document.addEventListener('mousemove', function(e) {
-        var angle = Math.atan2(e.clientY - centerY, e.clientX - centerX) * 180 / Math.PI;
-        gear.style.transform = 'rotate(' + angle + 'deg)';
-    });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    home_animateds();
     home_events();
 });
+
+
+
+
+
+
+
+
+
