@@ -48,7 +48,7 @@
 			]
 		},
 		{
-			"name" : "Front-end",
+			"name" : "Web Front-end",
 			"skills" :
 			[
 				{
@@ -94,7 +94,7 @@
 			]
 		},
 		{
-			"name" : "Back-end Web",
+			"name" : "Web Back-end",
 			"skills" :
 			[
 				{
@@ -121,6 +121,11 @@
 					"name": "MongoDB",
 					"logo": "resources/images/skills/MongoDB.svg",
 					"link": "https://www.mongodb.com"
+				},
+				{
+					"name": "Spring",
+					"logo": "resources/images/skills/Spring.svg",
+					"link": "https://spring.io/"
 				}
 			]
 		},

@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<title>Matthieu Jacques</title>
-		<link rel="shortcut icon" type="image/png" href="resources/images/logo_gears_2.png">
+		<link rel="shortcut icon" type="image/png" href="resources/images/assets/logo_gears_3.png">
 
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,7 +21,6 @@
 		<meta property="og:site_name" content="Matthieu Jacques Website">
 		<meta property="og:description" content="Matthieu Jacques Website">
 
-		<script src="libraries/particlesjs/particles.js"></script>
 
 		<script src="js/header.js"></script>
 		<script src="js/home.js"></script>
@@ -42,6 +41,7 @@
 		<link rel="stylesheet" type="text/css" href="css/home.css">
 		<link rel="stylesheet" type="text/css" href="css/properties.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/gears.css">
 
 	</head>
 	<body>
@@ -58,7 +58,8 @@
 				<nav class="nav">
 					<div class="logo">
 						<a class="animated animated_fast" href="https://www.matthieu-jacques.com/">
-							<img src="resources/images/logo_gears_3.png" alt="logo" width="80px" height="80px"/>
+							<img src="resources/images/assets/logo_gears_3.png" alt="logo" width="80px" height="80px"/>
+							<img id="clickthis" src="resources/images/assets/clickthis.png" alt="Link to a little javascript project" />
 						</a>
 					</div>
 					<div class="menu">
@@ -70,7 +71,7 @@
 							<li class="experience animated"><a class="not_button" href="#experience">Experience</a></li>
 							<li class="contact animated">
 								<a class="button" href="#contact">
-									<p>Contact</p>
+									<p>Contact</p> 
 									<svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39"><g>
 										<path class="path_1" d="M8.9 12.4 L8.9 12.4"/>
 										<path class="path_2" d="M16.2 5 8.9 12.4 1.5 5"/></g>
@@ -117,27 +118,22 @@
 			<main id="main">
 				<a id="home"></a>
 				<section class="section" id="home_section">
-					<div id="particles"></div>
-					<div class="content">
-						<br><br>
-						<span class="welcome animated"> Welcome, my name is</span>
-						<span class="name animated">Matthieu Jacques.</span>
-						<span class="title animated">Software Engineer.</span>
-						<p class="bio animated">
-							I'm a <span id="age">20</span> years old, creative Software Engineer from France, currently working as a Fullstack Developper. 
-							I studied computer science at <a class="link" href="https://www.insa-toulouse.fr/en/index.html" target="_blank">INSA Toulouse</a>.
-							I am open to any exciting opportunity.
-						</p>
-						<div class="see-more_button animated">
-							<a class="button" href="#about">
-								<p>See more</p>
-								<svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39"><g>
-									<path class="path_1" d="M8.9 12.4 L8.9 12.4"/>
-									<path class="path_2" d="M16.2 5 8.9 12.4 1.5 5"/>
-								</g></svg>
-							</a>
+						<div class="content">
+							<br><br>
+							<span class="welcome animated"> Welcome, my name is</span>
+							<span class="name animated">WORK IN PROGRESS.</span>
+							<span class="title animated">Software Engineer.</span>
+							<p class="bio animated">
+								I'm a <span id="age">20</span> years old, creative Software Engineer from France, currently working as a Fullstack Developper. 
+								I studied computer science at <a class="link" href="https://www.insa-toulouse.fr/en/index.html" target="_blank">INSA Toulouse</a>.
+								I am open to any exciting opportunity.
+							</p>
+							<div class="see-more_button animated">
+								<a class="button" href="#about">
+									<p>See more</p>
+								</a>
+							</div>
 						</div>
-					</div>
 				</section>
 
 				<link rel="stylesheet" type="text/css" href="css/about.css"/>
@@ -148,7 +144,7 @@
 						<span class="section_title">About me : </span>
 						<div class="about_content">
 							<p class="p_1">
-								My name is Matthieu Jacques. I'm always on the lookout for exciting projects and innovative ideas. I love creating about anything, and understanding the appeal behind the subjets I enjoy.
+								My name is Matthieu Jacques. I'm always on the lookout for exciting projects and innovative ideas, and I like to understand the appeal behind the subjets I enjoy.
 								<br/>
 								<br/>
 								This platform serves as a showcase for my portfolio, encompassing projects I've initiated and contributed to,
@@ -162,6 +158,7 @@
 							<div class="photo">
 								<img class="animated" src="resources/images/Photo.webp" alt="photo" width="760px" height="760px"/>
 							</div>
+
 						</div>
 					</div>
 				</section>
@@ -193,7 +190,7 @@
 				<a id="skills"></a>
 				<section class="section" id="skills_section">
 					<div class="content leaning">
-						<span class="section_title">Skills : </span>
+						<span class="section_title">Skills :</span>
 						<div class="skills_content">
 							<div class="box"></div>
 						</div>
