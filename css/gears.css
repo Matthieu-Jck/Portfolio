@@ -1,7 +1,6 @@
 .gear-container {
     display: flex;
     position: absolute;
-    top: 40%;
     z-index: 100;
 }
 
