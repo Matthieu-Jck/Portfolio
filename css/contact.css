@@ -3,7 +3,7 @@
 	background-color: var(--section-color-1);
 }
 
-#contact_section .content.leaning
+#contact_section .content.leaning 
 {
 	margin-top: calc(calc(clamp(110px, 7vw, 130px) + 3.3vw) * 1.65);
 	margin-bottom: calc(clamp(100px, 7vw, 130px) * 2);

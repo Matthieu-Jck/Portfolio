@@ -31,4 +31,4 @@ function about_animateds()
 	});
 
 	animated_check();
-}
+} 

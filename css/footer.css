@@ -1,12 +1,12 @@
 #footer_section
 {
-	background-color: var(--section-color-1);
-}
+	background-color: var(--footer-color); 
+} 
 
 #footer_section .content
 {
-	margin-top: clamp(90px, 6vw, 110px);
-	margin-bottom: calc(clamp(90px, 6vw, 110px) * 0.75);
+	margin-top: clamp(20px, 5vw, 40px);
+	margin-bottom: calc(clamp(20px, 5vw, 40px));
 	gap: 80px;
 }
 
