@@ -128,18 +128,6 @@ function header_events()
 		last_scroll_top = new_last_scroll_top <= 0 ? 0 : new_last_scroll_top;
 	});
 
-	window.addEventListener("scroll", function() {
-		var image = document.getElementById('clickthis');
-		var triggerHeight = document.documentElement.scrollHeight - window.innerHeight - 200;  // 200px before the end
-	
-		if (window.scrollY >= triggerHeight) {
-			image.style.display = "block";
-		} else {
-			image.style.display = "none";
-		}
-	});
-	
-
 	window.addEventListener('resize', (e) =>
 	{
 		scroll_event();

@@ -1,5 +1,4 @@
-#home_section
-{
+#home_section {
 	position: relative;
 	z-index: 1;
 	height: 100vh;
@@ -8,22 +7,19 @@
 	background: radial-gradient(ellipse at bottom, #0b1829 0%, #000000 100%);
 }
 
-#home_section .content
-{
+#home_section .content {
 	pointer-events: none;
 	align-items: flex-start;
 }
 
-#home_section .welcome
-{
+#home_section .welcome {
 	pointer-events: all;
 	font-family: raleway_semi_bold;
 	font-size: 20px;
 	color: var(--bio-color);
 }
 
-#home_section .name
-{
+#home_section .name {
 	pointer-events: all;
 	font-family: calibre_semi_bold;
 	font-size: clamp(40px, 8vw, 80px);
@@ -31,16 +27,14 @@
 	margin-top: 25px;
 }
 
-#home_section .title
-{
+#home_section .title {
 	pointer-events: all;
 	font-family: calibre_semi_bold;
 	font-size: clamp(35px, 7vw, 70px);
 	color: var(--bio-color);
 }
 
-#home_section .bio
-{
+#home_section .bio {
 	pointer-events: all;
 	font-family: calibre_regular;
 	max-width: 480px;
@@ -51,7 +45,105 @@
 	text-align: justify;
 }
 
-#home_section .see-more_button
-{
+#home_section .see-more_button {
 	margin-top: 40px;
+}
+
+/*  rain */
+.rain {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.rain.back-row {
+	display: block;
+	z-index: 1;
+	bottom: 60px;
+	opacity: 0.5;
+}
+
+
+.drop {
+	position: absolute;
+	bottom: 100%;
+	width: 15px;
+	height: 120px;
+	pointer-events: none;
+	animation: drop 0.5s linear infinite;
+}
+
+@keyframes drop {
+	0% {
+		transform: translateY(0vh);
+	}
+
+	75% {
+		transform: translateY(90vh);
+	}
+
+	100% {
+		transform: translateY(90vh);
+	}
+}
+
+.stem {
+	width: 1px;
+	height: 60%;
+	margin-left: 7px;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+	animation: stem 0.5s linear infinite;
+}
+
+@keyframes stem {
+	0% {
+		opacity: 1;
+	}
+
+	65% {
+		opacity: 1;
+	}
+
+	75% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.splat {
+	width: 15px;
+	height: 10px;
+	border-top: 2px dotted rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	opacity: 1;
+	transform: scale(0);
+	animation: splat 0.5s linear infinite;
+	display: block;
+}
+
+@keyframes splat {
+	0% {
+		opacity: 1;
+		transform: scale(0);
+	}
+
+	80% {
+		opacity: 1;
+		transform: scale(0);
+	}
+
+	90% {
+		opacity: 0.5;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1.5);
+	}
 }
