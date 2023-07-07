@@ -4,7 +4,7 @@
 	height: 100vh;
 	width: 100vw;
 	max-width: 100%;
-	background: radial-gradient(ellipse at bottom, #0b1829 0%, #000000 100%);
+	background: radial-gradient(ellipse at bottom, #000f22 0%, #000000 100%);
 }
 
 #home_section .content {
@@ -81,11 +81,11 @@
 	}
 
 	75% {
-		transform: translateY(90vh);
+		transform: translateY(110vh);
 	}
 
 	100% {
-		transform: translateY(90vh);
+		transform: translateY(110vh);
 	}
 }
 
