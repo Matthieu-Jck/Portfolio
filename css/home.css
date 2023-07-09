@@ -1,15 +1,21 @@
 #home_section {
 	position: relative;
-	z-index: 1;
 	height: 100vh;
-	width: 100vw;
 	max-width: 100%;
-	background: radial-gradient(ellipse at bottom, #000f22 0%, #000000 100%);
+	background: radial-gradient(ellipse at bottom, #011d41 0%, #000000 100%);
+	flex-direction: column-reverse;
+    overflow: hidden;
 }
 
 #home_section .content {
-	pointer-events: none;
-	align-items: flex-start;
+    pointer-events: none;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+    padding-left: 10%;
+    text-align: left;
 }
 
 #home_section .welcome {

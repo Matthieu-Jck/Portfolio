@@ -27,10 +27,11 @@
 
 	<script src="js/properties.js"></script>
 	<script src="js/utils.js"></script>
-	
+
 	<script src="js/header.js"></script>
 	<script src="js/home.js"></script>
 	<script src="js/rain.js"></script>
+	<script src="js/water.js"></script>
 
 	<script src="js/about.js"></script>
 	<script src="js/skills.js"></script>
@@ -49,6 +50,7 @@
 	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/gears.css">
+	<link rel="stylesheet" type="text/css" href="css/water.css">
 
 </head>
 
@@ -127,21 +129,45 @@
 		</div>
 	</div>
 
+
+	<!-- ====================================  CONTENT ==================================== -->
 	<div id="content">
 		<main id="main">
 			<a id="home"></a>
+
+
+			<!-- HOME SECTION -->
 			<section class="section" id="home_section">
+				<div class="wave-container">
+					<div class="below-waves"></div>
+					<div class="water">
+						<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+							<defs>
+								<path id="gentle-wave"
+									d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+							</defs>
+							<g class="parallax">
+								<use xlink:href="#gentle-wave" x="0" y="0" fill="rgba(255,255,255,0.7" />
+								<use xlink:href="#gentle-wave" x="0" y="3" fill="rgba(255,255,255,0.5)" />
+								<use xlink:href="#gentle-wave" x="0" y="5" fill="rgba(255,255,255,0.3)" />
+								<use xlink:href="#gentle-wave" x="0" y="7" fill="#fff" />
+							</g>
+						</svg>
+					</div>
+				</div>
+
 				<div class="content">
 					<div class="rain front-row"></div>
 					<div class="rain back-row"></div>
-					  
+
 					<br><br>
 					<span class="welcome animated"> Welcome, my name is</span>
 					<span class="name animated">Matthieu Jacques.</span>
 					<span class="title animated">Software Engineer.</span>
 					<p class="bio animated">
 						I'm a <span id="age">20</span> years old, creative Software Engineer from France, currently
-						working as a Fullstack Developper.
+						working as a Fullstack Developer.
 						I studied computer science at <a class="link" href="https://www.insa-toulouse.fr/"
 							target="_blank">INSA Toulouse</a>.
 						I am open to any exciting opportunity.
@@ -160,6 +186,7 @@
 				</div>
 			</section>
 
+			<!-- ABOUT SECTION -->
 			<link rel="stylesheet" type="text/css" href="css/about.css" />
 
 			<a id="about"></a>
@@ -168,19 +195,16 @@
 					<span class="section_title">About me : </span>
 					<div class="about_content">
 						<p class="p_1">
-							My name is Matthieu Jacques. I'm always on the lookout for exciting projects and innovative
-							ideas, and I like to understand the appeal behind the subjets I enjoy.
-							<br />
-							<br />
-							This platform serves as a showcase for my portfolio, encompassing projects I've initiated
-							and contributed to,
-							reflecting my practical expertise and theoretical knowledge.
+							As a creative software engineer, I thrive on innovation and exploration. This portfolio
+							showcases my diverse projects, reflecting my practical expertise in
+							fields such as game development, algorithm creation, artificial intelligence, and web
+							design. <br><br>
 
-							I find the most joy when I can blend my creative skills together. I love meeting diverse
-							people and exchanging ideas and opinions about anything.
-							I create games, algorithms, artificial intelligences, websites and more.
-							<br />
+							What fuels my creativity is engaging with diverse people and ideas. Each exchange inspires my
+							work and broadens my perspective. <br><br>
 
+							Feel free to delve into my portfolio and explore my passion for blending creativity and
+							technology. <br><br>
 						</p>
 						<div class="photo">
 							<img class="animated" src="resources/images/Photo.webp" alt="photo" width="760px"
@@ -213,6 +237,8 @@
 			</section>
 			<div class="section_end projects_end"></div>
 
+
+			<!-- SKILLS SECTION -->
 			<link rel="stylesheet" type="text/css" href="css/skills.css" />
 
 			<a id="skills"></a>
@@ -239,6 +265,7 @@
 
 			<link rel="stylesheet" type="text/css" href="css/contact.css" />
 
+			<!-- CONTACT SECTION -->
 			<a id="contact"></a>
 			<section class="section" id="contact_section">
 				<div class="content leaning">
