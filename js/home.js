@@ -33,15 +33,6 @@ function home_events() {
     document.querySelector('#home_section').style.minHeight = (rectContent.height + 90) + 'px';
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     home_events();
 });
-
-
-
-
-
-
-
-
-

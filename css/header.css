@@ -140,11 +140,3 @@
 #header .home a.active:hover {
     color: black;
 }
-
-#header #clickthis {
-    display: none;
-    position: absolute;
-    top: 200%;
-    left: 60%;
-	width: 250px;
-}

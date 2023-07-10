@@ -44,11 +44,21 @@
 					"name": "Unix",
 					"logo": "resources/images/skills/Unix.svg",
 					"link": "https://en.wikipedia.org/wiki/Unix"
+				},
+				{
+					"name": "Eclipse",
+					"logo": "resources/images/skills/Eclipse.svg",
+					"link": "https://www.eclipse.org/projects/"
+				},
+				{
+					"name": "Docker",
+					"logo": "resources/images/skills/Docker.svg",
+					"link": "https://www.docker.com/"
 				}
 			]
 		},
 		{
-			"name" : "Web Front-end",
+			"name" : "Web Front-End",
 			"skills" :
 			[
 				{
@@ -85,16 +95,11 @@
 					"name": "Bootstrap",
 					"logo": "resources/images/skills/Bootstrap.svg",
 					"link": "https://getbootstrap.com/"
-				},
-				{
-					"name": "Git",
-					"logo": "resources/images/skills/Git.svg",
-					"link": "https://git-scm.com/"
 				}
 			]
 		},
 		{
-			"name" : "Web Back-end",
+			"name" : "Web Back-End",
 			"skills" :
 			[
 				{
@@ -126,6 +131,37 @@
 					"name": "Spring",
 					"logo": "resources/images/skills/Spring.svg",
 					"link": "https://spring.io/"
+				},
+				{
+					"name": "Eclipse",
+					"logo": "resources/images/skills/Eclipse.svg",
+					"link": "https://www.eclipse.org/projects/"
+				}
+			]
+		},
+		{
+			"name" : "Game Development ",
+			"skills" :
+			[
+				{
+					"name": "Unity",
+					"logo": "resources/images/skills/Unity.svg",
+					"link": "https://unity.com/fr"
+				},
+				{
+					"name": "C#",
+					"logo": "resources/images/skills/C_sharp.svg",
+					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+				},
+				{
+					"name": "Unreal Engine",
+					"logo": "resources/images/skills/UnrealEngine.svg",
+					"link": "https://www.unrealengine.com/fr"
+				},
+				{
+					"name": "C++",
+					"logo": "resources/images/skills/Cpp.svg",
+					"link": "https://en.wikipedia.org/wiki/C%2B%2B"
 				}
 			]
 		},
@@ -139,6 +175,11 @@
 					"link": "https://www.figma.com/"
 				},
 				{
+					"name": "Krita",
+					"logo": "resources/images/skills/Krita.png",
+					"link": "https://krita.org/en/"
+				},
+				{
 					"name": "MidJourney",
 					"logo": "resources/images/skills/Midjourney.svg",
 					"link": "https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F"
@@ -146,9 +187,14 @@
 			]
 		},
 		{
-			"name" : "Machine Learning",
+			"name" : "Data Science",
 			"skills" :
 			[
+				{
+					"name": "Python",
+					"logo": "resources/images/skills/Python.svg",
+					"link": "https://www.python.org/"
+				},
 				{
 					"name": "Tensorflow",
 					"logo": "resources/images/skills/Tensorflow.svg",
@@ -158,6 +204,33 @@
 					"name": "Keras",
 					"logo": "resources/images/skills/Keras.svg",
 					"link": "https://keras.io/"
+				},
+				{
+					"name": "Hadoop",
+					"logo": "resources/images/skills/Hadoop.svg",
+					"link": "https://fr.wikipedia.org/wiki/Hadoop"
+				}
+
+			]
+		},
+		{
+			"name" : "Project Management",
+			"skills" :
+			[
+				{
+					"name": "Scrum",
+					"logo": "resources/images/skills/Scrum.svg",
+					"link": "https://en.wikipedia.org/wiki/Scrum_(software_development)"
+				},
+				{
+					"name": "Jira",
+					"logo": "resources/images/skills/Jira.svg",
+					"link": "https://www.atlassian.com/software/jira"
+				},
+				{
+					"name": "Trello",
+					"logo": "resources/images/skills/Trello.svg",
+					"link": "https://trello.com/en"
 				}
 			]
 		}
