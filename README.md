@@ -2,7 +2,7 @@
 
 <br>
 
-My personal website, used as a portfolio and maybe one day, a blog.
+My personal website and portfolio
 
 <br>
 
