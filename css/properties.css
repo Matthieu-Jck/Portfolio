@@ -65,26 +65,26 @@ body
 {
 
 	--header-color:#000000;
-	--header-links-color:#FFCB9A;
-	--buttons-hover-color: #EAE0C8;
-	--hover-color: #4682B4;
-	--section-color-1:#D9B08C;
-	--section-color-2:#020202;
-	--footer-color:#ff8579;
+--header-links-color:#5FA8D3;
+--buttons-hover-color: #EAE0C8;
+--hover-color: #4682B4;
+--section-color-1:#d7fcff;
+--section-color-2:#020202;
+--footer-color:#116465;
 
-	--title-1-color:#116465;
-	--title-2-color:#D9B08C;
-	
-	--name-color:#fec5a2;
-	--welcome-color:#D1E8E2;
-	--bio-color:#EAE0C8;
+--title-1-color:#116465;
+--title-2-color:#116465;
 
-	--links-color:#197779;
-	--border-color: #004B49;
-	--text-color-1:#2C3531;
-	--text-color-2:#EAE0C8;
+--name-color:#fff2ea;
+--welcome-color:#D1E8E2;
+--bio-color:#EAE0C8;
 
-	--section-items-color:#197779;
-	--selected-button-color: #D1E8E2; 
+--links-color:#197779;
+--border-color: #004B49;
+--text-color-1:#2C3531;
+--text-color-2:#EAE0C8;
+
+--section-items-color:#197779;
+--selected-button-color: #D1E8E2; 
 
 }
