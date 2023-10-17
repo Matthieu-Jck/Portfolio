@@ -25,21 +25,20 @@
 			"date": 2023,
 			"type": "Personal Project",
 			"title": "Water Paths",
-			"description": "Water Paths is my debut Unity project—a 2D puzzle game centered on water physics. Players must strategically move bricks to guide water and its different states, while a quiet lore and light dialogue underscore the gameplay.",
+			"description": "Water Paths is my debut Unity project—a 2D puzzle game centered on water physics. \nPlayers must strategically move bricks to guide water and its different states, with a quiet story and light dialogues underscoring the gameplay.",
 			"tags":
 			[
-				{ "name": "HTML", "url": "https://en.wikipedia.org/wiki/HTML" },
-				{ "name": "CSS", "url": "https://en.wikipedia.org/wiki/CSS" },
-				{ "name": "JavaScript", "url": "https://en.wikipedia.org/wiki/JavaScript" }
+				{ "name": "Unity", "url": "https://en.wikipedia.org/wiki/Unity_(game_engine)" },
+				{ "name": "C#", "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" }
 			],
 			"links":
 			[
 				"https://matthieu-jck.github.io/Portfolio/"
 			],
-			"video": "none",
+			"video": "resources/videos/projects/WaterPaths_Showcase.mp4",
 			"image": "resources/images/projects/Portfolio.svg",
 			"logo": "resources/images/projects/Portfolio.svg",
-			"categories": ["Personal", "Web"]
+			"categories": ["Personal", "Game Design"]
 		}
 	]
 }
