@@ -17,8 +17,8 @@
 				"https://matthieu-jck.github.io/Portfolio/"
 			],
 			"video": "none",
-			"image": "resources/images/projects/Portfolio.svg",
-			"logo": "resources/images/projects/Portfolio.svg",
+			"image": "resources/images/projects/Portfolio.png",
+			"logo": "resources/images/projects/Portfolio.png",
 			"categories": ["Personal", "Web"]
 		},
 		{
@@ -33,11 +33,11 @@
 			],
 			"links":
 			[
-				"https://matthieu-jck.github.io/Portfolio/"
+				"https://github.com/Matthieu-Jck/WaterPaths"
 			],
 			"video": "resources/videos/projects/WaterPaths_Showcase.mp4",
-			"image": "resources/images/projects/Portfolio.svg",
-			"logo": "resources/images/projects/Portfolio.svg",
+			"image": "resources/images/projects/WaterPaths.png",
+			"logo": "resources/images/projects/WaterPaths.png",
 			"categories": ["Personal", "Game Design"]
 		}
 	]

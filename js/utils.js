@@ -2,6 +2,7 @@
 
 function is_safari()
 {
+	console.log(navigator.userAgent)
 	return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 }
 
