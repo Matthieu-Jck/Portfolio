@@ -5,7 +5,7 @@
 			"date": "2021-2022",
 			"type": "Software Engineer - Professional Contract",
 			"title": "Capgemini",
-			"description": "Aerospatial: Developping the ground segment of a satellite mission for Earth's observation.",
+			"description": "Aerospatial: Developping the ground segment's software of a satellite mission for Earth's observation.",
 			"tags":
 			[
 				{ "name": "Java", "url": "https://www.java.com/en/" },
@@ -20,38 +20,23 @@
 			"image": "resources/images/experiences/Capgemini.png"
 		},
 		{
-			"date": "2022-2023",
-			"type": "Software Engineer",
+			"date": "2022-2024",
+			"type": "Software / FullStack Engineer",
 			"title": "Infotel",
-			"description": "Aeronautics: Development of Orlando Suite, a Web and iOS solution for airlines management.",
+			"description": "Aeronautics: Development of Orlando Suite, a Web and iOS solution for airlines management, and development of a web application for CNRS's management.",
 			"tags":
 			[
 				{ "name": "Java", "url": "https://www.java.com/en/" },
 				{ "name": "Angular", "url": "https://angular.io/" },
+				{ "name": "NodeJS", "url": "https://nodejs.org/en" },
 				{ "name": "MongoDB", "url": "https://www.mongodb.com/" },
-				{ "name": "Scrum", "url": "https://www.scrum.org/" },
-				{ "name": "NodeJS", "url": "https://nodejs.org/en" }
-			],
-			"link": "https://infotel-consulting.co.uk/",
-			"video": "none",
-			"image": "resources/images/experiences/Infotel.svg"
-		},
-		{
-			"date": "2023",
-			"type": "Fullstack Engineer",
-			"title": "Infotel",
-			"description": "Research: Development of a Web application for CNRS's management and recrutement.",
-			"tags":
-			[
-				{ "name": "Java", "url": "https://www.java.com/en/" },
-				{ "name": "Angular", "url": "https://angular.io/" },
-				{ "name": "Material Design", "url": "https://material.angular.io/"},
 				{ "name": "PostGreSQL", "url": "https://www.postgresql.org/" },
-				{ "name": "NodeJS", "url": "https://nodejs.org/en" }
+				{ "name": "Hibernate", "url": "https://hibernate.org/" },
+				{ "name": "Scrum", "url": "https://www.scrum.org/" }
 			],
 			"link": "https://infotel-consulting.co.uk/",
 			"video": "none",
-			"image": "resources/images/experiences/Infotel.svg"
+			"image": "resources/images/experiences/Infotel.png"
 		}
 	]
 }
