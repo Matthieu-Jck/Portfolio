@@ -1,5 +1,7 @@
 'use strict';
 
+
+// This file isn't used anymore: the gears were initialy planed to be in the frontpage but were swapped for the rain effects
 window.addEventListener('load', function gears() {
     const GEAR_1_SELECTOR = '.gear-first';
     const GEAR_2_SELECTOR = '.gear-second';

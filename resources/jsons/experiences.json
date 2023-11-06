@@ -3,9 +3,9 @@
 	[
 		{
 			"date": "2021-2022",
-			"type": "Software Engineer - Professional Contract",
+			"type": "Software Engineer",
 			"title": "Capgemini",
-			"description": "Aerospatial: Developping the ground segment's software of a satellite mission for Earth's observation.",
+			"description": "Aerospatial: Developping the ground segment's software of a satellite mission for Earth's observation. Client/Server architecture.",
 			"tags":
 			[
 				{ "name": "Java", "url": "https://www.java.com/en/" },

@@ -16,29 +16,24 @@
 					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
 				},
 				{
+					"name": "Kotlin",
+					"logo": "resources/images/skills/Kotlin.svg",
+					"link": "https://kotlinlang.org/"
+				},
+				{
 					"name": "Python",
 					"logo": "resources/images/skills/Python.svg",
 					"link": "https://www.python.org/"
 				},
 				{
-					"name": "OCaml",
-					"logo": "resources/images/skills/OCaml.svg",
-					"link": "https://ocaml.org/index.html"
-				},
-				{
-					"name": "MatLab",
-					"logo": "resources/images/skills/Matlab.svg",
-					"link": "https://fr.mathworks.com/products/matlab.html"
+					"name": "Git",
+					"logo": "resources/images/skills/Git.svg",
+					"link": "https://git-scm.com/"
 				},
 				{
 					"name": "C++",
 					"logo": "resources/images/skills/Cpp.svg",
 					"link": "https://en.wikipedia.org/wiki/C%2B%2B"
-				},
-				{
-					"name": "Git",
-					"logo": "resources/images/skills/Git.svg",
-					"link": "https://git-scm.com/"
 				},
 				{
 					"name": "Unix",
@@ -54,6 +49,15 @@
 					"name": "Docker",
 					"logo": "resources/images/skills/Docker.svg",
 					"link": "https://www.docker.com/"
+				},				{
+					"name": "OCaml",
+					"logo": "resources/images/skills/OCaml.svg",
+					"link": "https://ocaml.org/index.html"
+				},
+				{
+					"name": "MatLab",
+					"logo": "resources/images/skills/Matlab.svg",
+					"link": "https://fr.mathworks.com/products/matlab.html"
 				}
 			]
 		},
