@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function decreaseWaterHeight() {
         if (waterHeight > 75) {
-            waterHeight -= 0.02;
-            bottom += 0.02;
+            waterHeight -= 0.03;
+            bottom += 0.03;
             waterElement.style.height = waterHeight + "%";
             waterElement.style.bottom = bottom + "%";
             belowWaterElement.style.height = bottom + "%"; 

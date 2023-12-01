@@ -5,7 +5,7 @@ function projects_events()
 	let sort_by = 'Default';
 	let done = [];
 	let elements = [];
-
+	
 	async function in_animation_check()
 	{
 		for (let i = 0; i < elements.length; i++)
@@ -181,6 +181,11 @@ function projects_events()
 
 		in_animation_check();
 		videos_scroll_event();
+		var videos = document.querySelectorAll('video');
+		videos.forEach(video => {
+			video.addEventListener('mouseenter', toggleSound);
+			video.addEventListener('mouseleave', toggleSound);
+		});
 	}
 
 	function generate_projects()
@@ -215,4 +220,22 @@ function projects_events()
 			el.classList.add('selected');
 		});
 	});
+
+}
+
+function toggleSound(event) {
+    var hoveredVideo = event.target;
+
+    // Check if the event is a mouseenter or mouseleave
+    if (event.type === 'mouseenter' && hoveredVideo.tagName === 'VIDEO') {
+        // Mute all videos
+        document.querySelectorAll('video').forEach(video => video.muted = true);
+
+        // Unmute and set volume for the hovered video
+        hoveredVideo.muted = false;
+        hoveredVideo.volume = 0.1;
+    } else if (event.type === 'mouseleave' && hoveredVideo.tagName === 'VIDEO') {
+        // Mute the video when the mouse leaves
+        hoveredVideo.muted = true;
+    }
 }
