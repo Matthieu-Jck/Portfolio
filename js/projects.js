@@ -233,7 +233,7 @@ function toggleSound(event) {
 
         // Unmute and set volume for the hovered video
         hoveredVideo.muted = false;
-        hoveredVideo.volume = 0.1;
+        hoveredVideo.volume = 0.6;
     } else if (event.type === 'mouseleave' && hoveredVideo.tagName === 'VIDEO') {
         // Mute the video when the mouse leaves
         hoveredVideo.muted = true;
