@@ -47,7 +47,7 @@
 			"date": 2024,
 			"type": "Personal Project",
 			"title": "BetChess",
-			"description": "BetChess is an online Chess website with a particularity: each turn, you bet on your opponent next move. If you predict correctly, you get to play twice! \n (DISCLAIMER: the hosting server for this project is currently a free plan, and can take some time to load)",
+			"description": "BetChess is an online Chess website with a particularity: each turn, you bet on your opponent's next move. If you predict correctly, you get to play twice! \n    (DISCLAIMER: the hosting server for this project is currently a free plan, and can take some time to load)",
 			"tags":
 			[
 				{ "name": "JavaScript", "url": "https://en.wikipedia.org/wiki/JavaScript" },
