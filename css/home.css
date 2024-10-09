@@ -43,7 +43,7 @@
 #home_section .bio {
     pointer-events: all;
     font-family: calibre_regular;
-    max-width: 480px;
+    max-width: 520px;
     font-size: 20px;
     color: var(--bio-color);
     line-height: 1.3;
