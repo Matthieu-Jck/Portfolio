@@ -28,6 +28,7 @@
 	stroke-linejoin: round;
 	width: 30px;
 	transition: stroke 0.2s ease;
+	margin-left: auto;
 }
 
 #menu_div .menu_icon:hover
