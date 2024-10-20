@@ -44,6 +44,7 @@
     stroke-linejoin: round;
     height: 30px;
     transition: stroke 0.2s ease;
+    margin-left: auto;
 }
 
 #header .menu_icon:hover {
