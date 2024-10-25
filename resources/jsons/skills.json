@@ -72,14 +72,19 @@
 					"link": "https://en.wikipedia.org/wiki/JavaScript"
 				},
 				{
+					"name": "TypeScript",
+					"logo": "resources/images/skills/TypeScript.svg",
+					"link": "https://www.typescriptlang.org"
+				},
+				{
 					"name": "Angular",
 					"logo": "resources/images/skills/Angular.svg",
 					"link": "https://angular.io/"
 				},
 				{
-					"name": "TypeScript",
-					"logo": "resources/images/skills/TypeScript.svg",
-					"link": "https://www.typescriptlang.org"
+					"name": "React",
+					"logo": "resources/images/skills/React.png",
+					"link": "https://react.dev/"
 				},
 				{
 					"name": "jQuery",
@@ -108,6 +113,11 @@
 					"link": "https://nodejs.org/en/"
 				},
 				{
+					"name": "C#",
+					"logo": "resources/images/skills/C_sharp.svg",
+					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+				},
+				{
 					"name": ".NET",
 					"logo": "resources/images/skills/DotNet.png",
 					"link": "https://dotnet.microsoft.com/en-us/"
@@ -126,6 +136,11 @@
 					"name": "Spring",
 					"logo": "resources/images/skills/Spring.svg",
 					"link": "https://spring.io/"
+				},
+				{
+					"name": "Hibernate",
+					"logo": "resources/images/skills/Hibernate.png",
+					"link": "https://hibernate.org/"
 				}
 			]
 		},
