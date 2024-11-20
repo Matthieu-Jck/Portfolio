@@ -1,0 +1,131 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #eeeeee;
+    color: #c9d1d9;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #161b22;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #58a6ff;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav button {
+    background: none;
+    border: none;
+    color: #c9d1d9;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav button:hover {
+    background-color: #58a6ff;
+    color: #161b22;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 60px;
+    position: relative;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    transition: transform 0.2s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center;
+}
+
+.arrow img {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
+.arrow.left {
+    left: 15px;
+}
+
+.arrow.right {
+    right: 15px;
+}
+
+.image-container {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.image-container #title {
+    position: absolute;
+    bottom: 15px;
+    background-color: rgba(13, 17, 23, 0.8);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #c9d1d9;
+    text-align: center;
+}
+
+/* Progress Bar */
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background-color: #58a6ff;
+    transition: width 10s linear;
+}
