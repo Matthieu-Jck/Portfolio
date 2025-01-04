@@ -63,7 +63,7 @@ function loadDrawings() {
 // Load the current drawing into the image container
 function loadImage() {
     const currentDrawing = drawings[currentIndex];
-    imageContainer.src = `resources/images/${currentDrawing.filename}`;
+    imageContainer.src = `resources/images/${currentDrawing}`;
     titleContainer.textContent = currentDrawing.title;
 }
 
