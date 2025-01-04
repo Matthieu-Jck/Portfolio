@@ -88,7 +88,7 @@
 			"date": 2023,
 			"type": "Personal Project",
 			"title": "Simple Particle Interactions",
-			"description": "This particle simulation showcases algorithms' potential as an art form. A dance of colors and physics, where simple rules of attraction and inertia create mesmerizing patterns, showcasing the beauty of complex systems emerging from basic interactions.",
+			"description": "This particle simulation showcases the beauty that can emerge from a chaos binded by a few simple rules, inspired by our own universe and the notion of entropy. It is a testament to the algorithm's potential as an art form.",
 			"tags":
 			[
 				{ "name": "Kotlin", "url": "https://kotlinlang.org/" },
