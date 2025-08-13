@@ -15,6 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    window.requestAnimationFrame(decreaseWaterHeight);
+    //window.requestAnimationFrame(decreaseWaterHeight);
     
 });

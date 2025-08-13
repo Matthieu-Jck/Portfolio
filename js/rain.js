@@ -28,4 +28,4 @@ var makeItRain = function () {
 }
 
 // Call the function once the document is ready
-$(document).ready(makeItRain);
+//$(document).ready(makeItRain);
