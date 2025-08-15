@@ -1,90 +1,80 @@
-@font-face
-{
+@font-face {
 	font-family: raleway_bold;
 	src: url("../resources/fonts/raleway/Raleway-Bold.ttf");
 	font-display: swap;
 }
 
-@font-face
-{
+@font-face {
 	font-family: raleway_semi_bold;
 	src: url("../resources/fonts/raleway/Raleway-SemiBold.ttf");
 	font-display: swap;
 }
 
-@font-face
-{
+@font-face {
 	font-family: raleway_medium;
 	src: url("../resources/fonts/raleway/Raleway-Medium.ttf");
 	font-display: swap;
 }
 
-@font-face
-{
+@font-face {
 	font-family: calibre_semi_bold;
 	src: url("../resources/fonts/calibre/CalibreSemibold.otf");
 	font-display: swap;
 }
 
-@font-face
-{
+@font-face {
 	font-family: calibre_medium;
 	src: url("../resources/fonts/calibre/CalibreMedium.otf");
 	font-display: swap;
 }
 
-@font-face
-{
+@font-face {
 	font-family: calibre_regular;
 	src: url("../resources/fonts/calibre/CalibreRegular.otf");
 	font-display: swap;
 }
 
-@font-face
-{
+@font-face {
 	font-family: calibre_light;
 	src: url("../resources/fonts/calibre/CalibreLight.otf");
 	font-display: swap;
 }
 
-@font-face
-{
+@font-face {
 	font-family: proxima_nova_bold;
 	src: url("../resources/fonts/proxima_nova/ProximaNovaBold.otf");
 	font-display: swap;
 }
 
-@font-face
-{
+@font-face {
 	font-family: proxima_nova_semi_bold;
 	src: url("../resources/fonts/proxima_nova/ProximaNovaSemibold.otf");
 	font-display: swap;
 }
 
-body
-{
+body {
 
-	--header-color:#000000;
---header-links-color:#5FA8D3;
---buttons-hover-color: #ffffff;
---hover-color: #4682B4;
---section-color-1:#d7fcff;
---section-color-2:#020202;
---footer-color:#000000;
+	--header-color: #000000;
+	--header-links-color: #5FA8D3;
+	--buttons-hover-color: #ffffff;
+	--hover-color: #4682B4;
+	--section-color-1: #d7fcff;
+	--section-color-2: #020202;
+	--footer-color: #000000;
 
---title-1-color:#020202;
---title-2-color:#d7fcff;
+	--title-1-color: #020202;
+	--title-2-color: #d7fcff;
 
---name-color:#fff2ea;
---welcome-color:#D1E8E2;
---bio-color:#c8e3ea;
+	--name-color: #fff2ea;
+	--welcome-color: #D1E8E2;
+	--bio-color: #c8e3ea;
 
---links-color:#197779;
---border-color: #004B49;
---text-color-1:#000000;
---text-color-2:#EAE0C8;
+	--links-color: #EAE0C8;
+	--buttons-color: #197779;
+	--border-color: #004B49;
+	--text-color-1: #000000;
+	--text-color-2: #d7fcff;
 
---section-items-color:#197779;
---selected-button-color: #D1E8E2; 
-
+	--section-items-color: #197779;
+	--selected-button-color: #D1E8E2;
 }

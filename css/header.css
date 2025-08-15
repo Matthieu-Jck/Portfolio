@@ -87,7 +87,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--links-color);
+    color: var(--buttons-color);
     padding: 9px 20px 9px 23px;
 }
 

@@ -28,11 +28,32 @@ function home_animateds() {
     animated_check();
 }
 
-function home_events() {
-    let rectContent = document.querySelector('#home_section .content').getBoundingClientRect();
-    document.querySelector('#home_section').style.minHeight = (rectContent.height + 90) + 'px';
-}
-
 document.addEventListener('DOMContentLoaded', function () {
     home_events();
 });
+
+
+function home_events()
+{
+	let particles_paused = false;
+	particlesJS.load('particles', 'resources/jsons/particles.json');
+
+	window.addEventListener('scroll', (e) =>
+	{
+		if (pJSDom[0] && document.querySelector('#particles').getBoundingClientRect().bottom < 0 && !particles_paused)
+		{
+			pJSDom[0].pJS.particles.move.enable = false;
+			particles_paused = true;
+		}
+
+		if (pJSDom[0] && document.querySelector('#particles').getBoundingClientRect().bottom >= 0 && particles_paused)
+		{
+			pJSDom[0].pJS.particles.move.enable = true;
+			pJSDom[0].pJS.fn.particlesRefresh();
+			particles_paused = false;
+		}
+	});
+
+	let rect = document.querySelector('#home_section .content').getBoundingClientRect();
+	document.querySelector('#home_section').style.minHeight = (rect.height + 90) + 'px';
+}
