@@ -5,7 +5,7 @@ function experience_events()
 	let done = [];
 	let elements = [];
 
-	async function in_animation_check()
+	async function animated_check()
 	{
 		for (let i = 0; i < elements.length; i++)
 			if (!done[i] && is_in_viewport(elements[i]))
@@ -19,12 +19,12 @@ function experience_events()
 
 	window.addEventListener('scroll', (e) =>
 	{
-		in_animation_check();
+		animated_check();
 	});
 
 	window.addEventListener('resize', (e) =>
 	{
-		in_animation_check();
+		animated_check();
 	});
 
 	function add_job(job, inverted)
@@ -37,7 +37,7 @@ function experience_events()
 		if (window.innerWidth > 780)
 		{
 			document.querySelector('#experience_section .experience_content').innerHTML += `
-				<div class="in_animation job ${inverted ? 'inverted' : ''}">
+				<div class="animated job ${inverted ? 'inverted' : ''}">
 					<div class="job_text">
 						<div class="type">
 							<span>${job.date}</span>
@@ -65,7 +65,7 @@ function experience_events()
 		else
 		{
 			document.querySelector('#experience_section .experience_content').innerHTML += `
-				<div class="in_animation job ${is_safari() ? 'safari_fix' : ''}" style="background-image: url(${job.image});">
+				<div class="animated job ${is_safari() ? 'safari_fix' : ''}" style="background-image: url(${job.image});">
 					<div class="job_text"">
 						<div class="type">
 							<span>${job.type}</span>
@@ -92,12 +92,12 @@ function experience_events()
 		}
 
 		done = [];
-		elements = document.querySelectorAll('#experience_section .in_animation');
+		elements = document.querySelectorAll('#experience_section .animated');
 
 		for (let _ of elements)
 			done.push(false);
 
-		in_animation_check();
+		animated_check();
 		videos_scroll_event();
 	}
 

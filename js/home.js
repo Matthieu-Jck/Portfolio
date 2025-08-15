@@ -1,37 +1,38 @@
 'use strict';
 
-function home_animateds() {
-    let done = false;
-    let elements = document.querySelectorAll('#home_section .animated');
-    let section = document.querySelector('#home_section');
+function home_animateds()
+{
+	let done = false;
+	let elements = document.querySelectorAll('#home_section .animated');
+	let section = document.querySelector('#home_section');
 
-    async function animated_check() {
-        if (!done && is_in_viewport(section)) {
-            for (let i of elements) {
-                i.style.opacity = '1';
-                i.style.transform = 'translateY(0)';
-                await sleep(300);
-            }
+	async function animated_check()
+	{
+		if (!done && is_in_viewport(section))
+		{
+			for (let i of elements)
+			{
+				i.style.opacity = '1';
+				i.style.transform = 'translateY(0)';
+				await sleep(300);
+			}
 
-            done = true;
-        }
-    }
+			done = true;
+		}
+	}
 
-    window.addEventListener('scroll', (e) => {
-        animated_check();
-    });
+	window.addEventListener('scroll', (e) =>
+	{
+		animated_check();
+	});
 
-    window.addEventListener('resize', (e) => {
-        animated_check();
-    });
+	window.addEventListener('resize', (e) =>
+	{
+		animated_check();
+	});
 
-    animated_check();
+	animated_check();
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-    home_events();
-});
-
 
 function home_events()
 {

@@ -6,7 +6,7 @@ function projects_events()
 	let done = [];
 	let elements = [];
 	
-	async function in_animation_check()
+	async function animated_check()
 	{
 		for (let i = 0; i < elements.length; i++)
 			if (!done[i] && is_in_viewport(elements[i]))
@@ -23,12 +23,12 @@ function projects_events()
 
 	window.addEventListener('scroll', (e) =>
 	{
-		in_animation_check();
+		animated_check();
 	});
 
 	window.addEventListener('resize', (e) =>
 	{
-		in_animation_check();
+		animated_check();
 	});
 
 	function add_project(project, inverted, featured)
@@ -43,7 +43,7 @@ function projects_events()
 			if (window.innerWidth > 780)
 			{
 				document.querySelector('#projects_section .projects_content').innerHTML += `
-					<div class="in_animation project ${inverted ? 'inverted' : ''}">
+					<div class="animated project ${inverted ? 'inverted' : ''}">
 						<div class="project_text">
 							<div class="type">
 								<span>${project.date}</span>
@@ -78,7 +78,7 @@ function projects_events()
 			else
 			{
 				document.querySelector('#projects_section .projects_content').innerHTML += `
-					<div class="in_animation project ${is_safari() ? 'safari_fix' : ''}" style="background-image: url(${project.image});">
+					<div class="animated project ${is_safari() ? 'safari_fix' : ''}" style="background-image: url(${project.image});">
 						<div class="project_text"">
 							<div class="type">
 								<span>${project.type}</span>
@@ -106,7 +106,7 @@ function projects_events()
 				tags += `<span>${tag.name}</span>`;
 
 			document.querySelector('#projects_section .other_projects_content').innerHTML += `
-				<div class="in_animation other_project">
+				<div class="animated other_project">
 					<div class="other_project_content">
 						<div class="header">
 							<div class="logos">
@@ -164,12 +164,12 @@ function projects_events()
 		}
 
 		done = [];
-		elements = document.querySelectorAll('#projects_section .in_animation');
+		elements = document.querySelectorAll('#projects_section .animated');
 
 		for (let _ of elements)
 			done.push(false);
 
-		in_animation_check();
+		animated_check();
 		videos_scroll_event();
 		var videos = document.querySelectorAll('video');
 		videos.forEach(video => {

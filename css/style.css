@@ -168,7 +168,6 @@ ol
 	font-size: 16px;
 	color: var(--buttons-color);
 	text-decoration: none;
-	background-color: white;
 	transition: background-color 0.3s ease;
 }
 
