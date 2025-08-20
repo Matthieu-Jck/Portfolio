@@ -3,9 +3,9 @@
 	[
 		{
 			"date": 2023,
-			"type": "Projet Personnel",
+			"type": "Personal Project",
 			"title": "Portfolio",
-			"description": "Vous naviguez actuellement dans ce portfolio — un site web d’une seule page, propre et réactif, développé uniquement en HTML, CSS et JavaScript.",
+			"description": "You are currently navigating through this portfolio—A one-page, clean code, responsive website developed using only HTML, CSS, and JavaScript. ",
 			"tags":
 			[
 				{ "name": "HTML", "url": "https://en.wikipedia.org/wiki/HTML" },
@@ -18,16 +18,16 @@
 				"https://matthieu-jck.github.io/Portfolio/",
 				"https://matthieu-jck.github.io/Portfolio/"
 			],
-			"video": "aucune",
+			"video": "none",
 			"image": "resources/images/projects/Portfolio.png",
 			"logo": "resources/images/projects/Portfolio.png",
-			"categories": ["Personnel", "Web"]
+			"categories": ["Personal", "Web"]
 		},
 		{
 			"date": 2024,
-			"type": "Projet Personnel",
+			"type": "Personal Project",
 			"title": "PhotonBreak",
-			"description": "PhotonBreak est un jeu d’arcade 2D dans lequel vous guidez un photon en avant grâce à la gravité, en créant différents corps célestes comme des trous noirs.\nDisponible sur l’App Store et le Play Store en 2025.",
+			"description": "PhotonBreak is a 2D arcade game in which you guide a photon forward using gravity, by creating different celestial bodies such as black holes.\nAvailable on App Store and Play Store by 2025",
 			"tags":
 			[
 				{ "name": "Unity", "url": "https://en.wikipedia.org/wiki/Unity_(game_engine)" },
@@ -41,13 +41,13 @@
 			"video": "resources/videos/projects/PhotonBreak.mp4",
 			"image": "resources/images/projects/PhotonBreak.png",
 			"logo": "resources/images/projects/PhotonBreak.png",
-			"categories": ["Personnel", "Game Design"]
+			"categories": ["Personal", "Game Design"]
 		},
 		{
 			"date": 2025,
-			"type": "Projet Freelance",
-			"title": "Site Web TheTravellingSoul (Agence de voyage)",
-			"description": "J’ai travaillé sur ce site web en tant que développeur freelance durant mon voyage en Australie.",
+			"type": "Freelance Project",
+			"title": "TheTravellingSoul Travel Agency website",
+			"description": "I worked on this website as a freelance developer during my trip to Australia.",
 			"tags":
 			[
 				{ "name": "Wordpress", "url": "https://www.wordpress.com/" },
@@ -60,16 +60,16 @@
 				"https://thetravellingsoul.com.au/",
 				"https://thetravellingsoul.com.au/"
 			],
-			"video": "aucune",
+			"video": "none",
 			"image": "resources/images/experiences/TheTravellingSoul.png",
-			"logo": "aucun",
-			"categories": ["Professionnel", "Web Design"]
+			"logo": "none",
+			"categories": ["Professional", "Web Design"]
 		},
 		{
 			"date": 2024,
-			"type": "Projet Personnel",
+			"type": "Personal Project",
 			"title": "BetChess",
-			"description": "BetChess est un site d’échecs en ligne avec une particularité : à chaque tour, vous pariez sur le prochain coup de votre adversaire. Si vous devinez correctement, vous jouez deux fois !\n(AVERTISSEMENT : le serveur hébergeant ce projet utilise actuellement un plan gratuit, le chargement peut donc être long).",
+			"description": "BetChess is an online Chess website with a particularity: each turn, you bet on your opponent's next move. If you predict correctly, you get to play twice! \n    (DISCLAIMER: the hosting server for this project is currently a free plan, and can take some time to load)",
 			"tags":
 			[
 				{ "name": "JavaScript", "url": "https://en.wikipedia.org/wiki/JavaScript" },
@@ -83,13 +83,13 @@
 			"video": "resources/videos/projects/BetChess.mp4",
 			"image": "resources/images/projects/BetChess.png",
 			"logo": "resources/images/projects/BetChess.png",
-			"categories": ["Personnel", "Web", "Game Design"]
+			"categories": ["Personal", "Web", "Game Design"]
 		},
 		{
 			"date": 2023,
-			"type": "Projet Personnel",
+			"type": "Personal Project",
 			"title": "Water Paths",
-			"description": "Water Paths est mon tout premier projet Unity — un jeu de réflexion 2D centré sur la physique de l’eau.\nLes joueurs doivent déplacer stratégiquement des briques pour guider l’eau et ses différents états, avec une histoire douce et de légers dialogues accompagnant le gameplay.",
+			"description": "Water Paths is my debut Unity project—a 2D puzzle game centered on water physics. \nPlayers must strategically move bricks to guide water and its different states, with a quiet story and light dialogues underscoring the gameplay.",
 			"tags":
 			[
 				{ "name": "Unity", "url": "https://en.wikipedia.org/wiki/Unity_(game_engine)" },
@@ -104,13 +104,13 @@
 			"video": "resources/videos/projects/WaterPaths_Showcase.mp4",
 			"image": "resources/images/projects/WaterPaths.png",
 			"logo": "resources/images/projects/WaterPaths.png",
-			"categories": ["Personnel", "Game Design"]
+			"categories": ["Personal", "Game Design"]
 		},
 		{
 			"date": 2023,
-			"type": "Projet Personnel",
-			"title": "Interactions Simples de Particules",
-			"description": "Cette simulation de particules illustre la beauté qui peut émerger d’un chaos régi par quelques règles simples, inspirées de notre propre univers et de la notion d’entropie. C’est une démonstration du potentiel de l’algorithme en tant que forme d’art.",
+			"type": "Personal Project",
+			"title": "Simple Particle Interactions",
+			"description": "This particle simulation showcases the beauty that can emerge from a chaos binded by a few simple rules, inspired by our own universe and the notion of entropy. It is a testament to the algorithm's potential as an art form.",
 			"tags":
 			[
 				{ "name": "Kotlin", "url": "https://kotlinlang.org/" },
@@ -125,7 +125,7 @@
 			"video": "resources/videos/projects/Simple_Interractions.mp4",
 			"image": "resources/images/projects/SimpleInterractions.png",
 			"logo": "resources/images/projects/SimpleInterractions.png",
-			"categories": ["Personnel", "Algorithmes"]
+			"categories": ["Personal", "Algorithms"]
 		}
 	]
 }
