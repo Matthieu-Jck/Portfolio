@@ -5,7 +5,7 @@
 			"date": "2021-2022",
 			"type": "Software Engineer",
 			"title": "Capgemini",
-			"description": "Aerospatial: Developping the ground segment's software of a satellite mission for Earth's observation. Client/Server architecture.",
+			"description": "Aerospatial: Developping the ground segment's software of Airbus Defense and Space's satellite mission for Earth's observation. Client/Server architecture.",
 			"tags":
 			[
 				{ "name": "Java", "url": "https://www.java.com/en/" },
@@ -23,7 +23,7 @@
 			"date": "2022-2024",
 			"type": "Software / FullStack Engineer",
 			"title": "Infotel",
-			"description": "Aeronautics: Development of Orlando Suite, a Web and iOS solution for airlines management, and development of a web application for CNRS's management.",
+			"description": "Aeronautics: Development of Orlando Suite, a Web and iOS solution for airlines management (AirFrance, AirCanada, Safran and more), and development of a web application for CNRS's management.",
 			"tags":
 			[
 				{ "name": "Java", "url": "https://www.java.com/en/" },

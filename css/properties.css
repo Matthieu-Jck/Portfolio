@@ -53,6 +53,7 @@
 }
 
 body {
+	caret-color: transparent;
 
 	--header-color: #000000;
 	--header-links-color: #5FA8D3;
