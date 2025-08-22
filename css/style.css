@@ -173,7 +173,7 @@ ol
 
 .button:hover
 {
-	background-color: var(--bio-color);
+	background-color: var(--buttons-hover-color);
 }
 
 .button .button_arrow

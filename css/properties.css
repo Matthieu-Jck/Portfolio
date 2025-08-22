@@ -51,13 +51,13 @@
 	src: url("../resources/fonts/proxima_nova/ProximaNovaSemibold.otf");
 	font-display: swap;
 }
-
+	
 body {
 	caret-color: transparent;
 
 	--header-color: #000000;
 	--header-links-color: #5FA8D3;
-	--buttons-hover-color: #ffffff;
+	--buttons-hover-color: #ffffff00;
 	--hover-color: #4682B4;
 	--section-color-1: #d7fcff;
 	--section-color-2: #020202;
