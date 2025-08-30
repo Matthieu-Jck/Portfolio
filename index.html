@@ -30,8 +30,7 @@
 
 	<script src="js/header.js"></script>
 	<script src="js/home.js"></script>
-	<script src="js/rain.js"></script>
-	<script src="js/water.js"></script>
+	<script src="js/particles.js"></script>
 
 	<script src="js/about.js"></script>
 	<script src="js/skills.js"></script>
@@ -58,7 +57,7 @@
 	<div id="safari_warning">
 		<p>
 			This website is not optimized for this browser.
-			For an optimal experience, please use Google Chrome.
+			For an optimal experience, please use Chrome or Firefox.
 		</p>
 	</div>
 	<div id="lcp">
@@ -67,11 +66,6 @@
 	<div id="header_div">
 		<header id="header">
 			<nav class="nav">
-				<div class="logo">
-					<a class="animated animated_fast" href="https://matthieu-jck.github.io/Portfolio/">
-						<img src="resources/images/assets/portfolio_icon.png" alt="logo" width="50px" height="50px" />
-					</a>
-				</div>
 				<div class="menu">
 					<ol>
 						<li class="home animated"><a class="not_button" href="#home">Home</a></li>
@@ -79,6 +73,7 @@
 						<li class="projects animated"><a class="not_button" href="#projects">Projects</a></li>
 						<li class="skills animated"><a class="not_button" href="#skills">Skills</a></li>
 						<li class="experience animated"><a class="not_button" href="#experience">Experience</a></li>
+						<!-- <li class="sketchbook animated"><a class="not_button" href="sketchbook/index.html" target="_blank">Sketchbook</a></li>-->
 						<li class="contact animated">
 							<a class="button" href="#contact">
 								<p>Contact</p>
@@ -113,6 +108,7 @@
 				<li class="projects"><a class="not_button" href="#projects">Projects</a></li>
 				<li class="skills"><a class="not_button" href="#skills">Skills</a></li>
 				<li class="experience"><a class="not_button" href="#experience">Experience</a></li>
+				<!--<li class="sketchbook"><a class="button" href="sketchbook/index.html">Sketchbook</a></li>-->
 				<li class="contact">
 					<a class="button" href="#contact">
 						<p>Contact</p>
@@ -124,7 +120,7 @@
 						</svg>
 					</a>
 				</li>
-			</ol>
+			</ol>			
 		</div>
 	</div>
 
@@ -137,6 +133,7 @@
 
 			<!-- HOME SECTION -->
 			<section class="section" id="home_section">
+				<div id="particles"></div>
 				<div class="wave-container">
 					<div class="below-waves"></div>
 					<div class="water">
@@ -160,14 +157,13 @@
 					<div class="rain front-row"></div>
 					<div class="rain back-row"></div>
 
-					<br><br>
+					<br>
 					<span class="welcome animated"> Welcome, my name is</span>
 					<span class="name animated">Matthieu Jacques.</span>
 					<span class="title animated">Software Engineer</span>
 					<p class="bio animated">
-						I'm a <span id="age">20</span> years old, creative Software Engineer from France, currently
-						working as a Fullstack Developer.
-						I studied computer science at <a class="link" href="https://www.insa-toulouse.fr/"
+						I'm a <span id="age">20</span> years old, creative Software Engineer and Full-Stack Developer from France.
+						I studied computer science at <a class="link" href="https://www.insa-toulouse.fr/en/"
 							target="_blank">INSA Toulouse</a>.
 						I am open to any exciting opportunity.
 					</p>
@@ -193,15 +189,28 @@
 				<div class="content">
 					<span class="section_title">About me : </span>
 					<div class="about_content">
+						<div class="selector">
+							
+						</div>
 						<p class="p_1">
-							As a creative software engineer, I thrive on innovation and exploration. This portfolio
-							showcases my diverse projects, reflecting my practical expertise in
-							fields such as game development, algorithm creation, artificial intelligence, and web
-							design. <br><br>
-
-							Feel free to delve into my portfolio and explore my passion for blending creativity and
-							technology. <br><br>
+							I’m a <b>software engineer</b> passionate about turning ideas into engaging, functional solutions across 
+							<b>web development</b>, <b>game design</b>, and <b>AI</b>.
+							<br><br>
+							After earning my degree at <b>INSA Toulouse</b>, I gained three years of experience in the 
+							<b>aerospace  and aeronautics industry</b> 
+							with companies such as Airbus D&S, Thales, and Air France, working on 
+							high-precision, mission-critical projects.
+							<br><br>
+							I then spent a year in Australia <b>freelancing</b> in <b>web design</b> and tutoring 
+							computer science and mathematics, which strengthened my client-facing skills 
+							as well as my English to a fluent and professional level. 
+							I thrive in collaborative environments, enjoy customer interaction, and value 
+							clear communication as much as technical excellence.
+							<br><br>
+							This <b>portfolio</b> highlights the projects and experiences that have shaped my journey.
+							<br><br>
 						</p>
+
 						<div class="photo">
 							<img class="animated" src="resources/images/Photo.webp" alt="photo" width="700px"
 								height="700px" />
@@ -212,6 +221,8 @@
 			</section>
 			<div class="section_end about_end"></div>
 
+
+			<!-- PROJECTS SECTION -->
 			<link rel="stylesheet" type="text/css" href="css/projects.css" />
 			<link rel="stylesheet" type="text/css" href="css/other_projects.css" />
 
@@ -219,14 +230,6 @@
 			<section class="section" id="projects_section">
 				<div class="content leaning">
 					<span class="section_title">Some of my Projects</span>
-					<div class="sort_choices">
-						<span class="label">Sort by</span>
-						<div class="choice selected">Default</div>
-						<div class="choice">Date</div>
-						<div class="choice">Web</div>
-						<div class="choice">Game Design</div>
-						<div class="choice">Algorithms</div>
-					</div>
 					<div class="projects_content"></div>
 					<div class="other_projects_content"></div>
 				</div>
@@ -268,7 +271,7 @@
 					<span class="section_title">Contacts : </span>
 					<div class="contact_content">
 						<div class="social_line">
-							<a class="social_link" href="https://www.linkedin.com/in/matthieu-jck/" target="_blank"
+							<a class="social_link" href="https://www.linkedin.com/in/matthieu-jck" target="_blank"
 								style="--size: 150.13px;">
 								<img src="resources/images/contact/linkedin.svg" alt="linkedin" width="50px"
 									height="50px" />
@@ -288,11 +291,11 @@
 							</a>
 						</div>
 						<div class="social_line">
-							<div class="social_link" style="--size: 320.84px;">
-								<a href="mailto:matthieu.jacques@gmail.com" target="_blank">
+							<div class="social_link" style="--size: 240.84px;">
+								<a href="mailto:mjacques.dev@gmail.com" target="_blank">
 									<img src="resources/images/contact/mail.svg" alt="mail" width="50px" height="50px">
 									<div class="social_text">
-										<span>matthieu.jacques.2077@gmail.com</span>
+										<span>mjacques.dev@gmail.com</span>
 									</div>
 								</a>
 							</div>

@@ -49,16 +49,6 @@
 					"name": "Docker",
 					"logo": "resources/images/skills/Docker.svg",
 					"link": "https://www.docker.com/"
-				},
-				{
-					"name": "OCaml",
-					"logo": "resources/images/skills/OCaml.svg",
-					"link": "https://ocaml.org/index.html"
-				},
-				{
-					"name": "MatLab",
-					"logo": "resources/images/skills/Matlab.svg",
-					"link": "https://fr.mathworks.com/products/matlab.html"
 				}
 			]
 		},
@@ -82,14 +72,19 @@
 					"link": "https://en.wikipedia.org/wiki/JavaScript"
 				},
 				{
+					"name": "TypeScript",
+					"logo": "resources/images/skills/TypeScript.svg",
+					"link": "https://www.typescriptlang.org"
+				},
+				{
 					"name": "Angular",
 					"logo": "resources/images/skills/Angular.svg",
 					"link": "https://angular.io/"
 				},
 				{
-					"name": "TypeScript",
-					"logo": "resources/images/skills/TypeScript.svg",
-					"link": "https://www.typescriptlang.org"
+					"name": "React",
+					"logo": "resources/images/skills/React.png",
+					"link": "https://react.dev/"
 				},
 				{
 					"name": "jQuery",
@@ -118,9 +113,14 @@
 					"link": "https://nodejs.org/en/"
 				},
 				{
-					"name": "ExpressJS",
-					"logo": "resources/images/skills/Express.svg",
-					"link": "http://expressjs.com"
+					"name": "C#",
+					"logo": "resources/images/skills/C_sharp.svg",
+					"link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+				},
+				{
+					"name": ".NET",
+					"logo": "resources/images/skills/DotNet.png",
+					"link": "https://dotnet.microsoft.com/en-us/"
 				},
 				{
 					"name": "SQL",
@@ -138,9 +138,9 @@
 					"link": "https://spring.io/"
 				},
 				{
-					"name": "Eclipse",
-					"logo": "resources/images/skills/Eclipse.svg",
-					"link": "https://www.eclipse.org/projects/"
+					"name": "Hibernate",
+					"logo": "resources/images/skills/Hibernate.png",
+					"link": "https://hibernate.org/"
 				}
 			]
 		},
@@ -188,6 +188,11 @@
 					"name": "MidJourney",
 					"logo": "resources/images/skills/Midjourney.svg",
 					"link": "https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F"
+				},
+				{
+					"name": "Canva",
+					"logo": "resources/images/skills/Canva.png",
+					"link": "https://www.canva.com/en_au/"
 				}
 			]
 		},

@@ -1,0 +1,131 @@
+{
+	"projects":
+	[
+		{
+			"date": 2023,
+			"type": "Projet Personnel",
+			"title": "Portfolio",
+			"description": "Vous naviguez actuellement dans ce portfolio — un site web d’une seule page, propre et réactif, développé uniquement en HTML, CSS et JavaScript.",
+			"tags":
+			[
+				{ "name": "HTML", "url": "https://en.wikipedia.org/wiki/HTML" },
+				{ "name": "CSS", "url": "https://en.wikipedia.org/wiki/CSS" },
+				{ "name": "JavaScript", "url": "https://en.wikipedia.org/wiki/JavaScript" }
+			],
+			"links":
+			[
+				"https://matthieu-jck.github.io/Portfolio/",
+				"https://matthieu-jck.github.io/Portfolio/",
+				"https://matthieu-jck.github.io/Portfolio/"
+			],
+			"video": "aucune",
+			"image": "resources/images/projects/Portfolio.png",
+			"logo": "resources/images/projects/Portfolio.png",
+			"categories": ["Personnel", "Web"]
+		},
+		{
+			"date": 2024,
+			"type": "Projet Personnel",
+			"title": "PhotonBreak",
+			"description": "PhotonBreak est un jeu d’arcade 2D dans lequel vous guidez un photon en avant grâce à la gravité, en créant différents corps célestes comme des trous noirs.\nDisponible sur l’App Store et le Play Store en 2025.",
+			"tags":
+			[
+				{ "name": "Unity", "url": "https://en.wikipedia.org/wiki/Unity_(game_engine)" },
+				{ "name": "C#", "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" }
+			],
+			"links":
+			[
+				"",
+				""
+			],
+			"video": "resources/videos/projects/PhotonBreak.mp4",
+			"image": "resources/images/projects/PhotonBreak.png",
+			"logo": "resources/images/projects/PhotonBreak.png",
+			"categories": ["Personnel", "Game Design"]
+		},
+		{
+			"date": 2025,
+			"type": "Projet Freelance",
+			"title": "Site Web TheTravellingSoul (Agence de voyage)",
+			"description": "J’ai travaillé sur ce site web en tant que développeur freelance durant mon voyage en Australie.",
+			"tags":
+			[
+				{ "name": "Wordpress", "url": "https://www.wordpress.com/" },
+				{ "name": "Notion", "url": "https://www.notion.com" },
+				{ "name": "Figma", "url": "https://www.figma.com" }
+			],
+			"links":
+			[
+				"https://thetravellingsoul.com.au/",
+				"https://thetravellingsoul.com.au/",
+				"https://thetravellingsoul.com.au/"
+			],
+			"video": "aucune",
+			"image": "resources/images/experiences/TheTravellingSoul.png",
+			"logo": "aucun",
+			"categories": ["Professionnel", "Web Design"]
+		},
+		{
+			"date": 2024,
+			"type": "Projet Personnel",
+			"title": "BetChess",
+			"description": "BetChess est un site d’échecs en ligne avec une particularité : à chaque tour, vous pariez sur le prochain coup de votre adversaire. Si vous devinez correctement, vous jouez deux fois !\n(AVERTISSEMENT : le serveur hébergeant ce projet utilise actuellement un plan gratuit, le chargement peut donc être long).",
+			"tags":
+			[
+				{ "name": "JavaScript", "url": "https://en.wikipedia.org/wiki/JavaScript" },
+				{ "name": "NodeJS", "url": "https://nodejs.org/en" }
+			],
+			"links":
+			[
+				"https://betchess.onrender.com/",
+				"https://github.com/Matthieu-Jck/BetChess"
+			],
+			"video": "resources/videos/projects/BetChess.mp4",
+			"image": "resources/images/projects/BetChess.png",
+			"logo": "resources/images/projects/BetChess.png",
+			"categories": ["Personnel", "Web", "Game Design"]
+		},
+		{
+			"date": 2023,
+			"type": "Projet Personnel",
+			"title": "Water Paths",
+			"description": "Water Paths est mon tout premier projet Unity — un jeu de réflexion 2D centré sur la physique de l’eau.\nLes joueurs doivent déplacer stratégiquement des briques pour guider l’eau et ses différents états, avec une histoire douce et de légers dialogues accompagnant le gameplay.",
+			"tags":
+			[
+				{ "name": "Unity", "url": "https://en.wikipedia.org/wiki/Unity_(game_engine)" },
+				{ "name": "C#", "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" }
+			],
+			"links":
+			[
+				"https://github.com/Matthieu-Jck/WaterPaths",
+				"https://github.com/Matthieu-Jck/WaterPaths",
+				"https://github.com/Matthieu-Jck/WaterPaths/archive/refs/heads/main.zip"
+			],
+			"video": "resources/videos/projects/WaterPaths_Showcase.mp4",
+			"image": "resources/images/projects/WaterPaths.png",
+			"logo": "resources/images/projects/WaterPaths.png",
+			"categories": ["Personnel", "Game Design"]
+		},
+		{
+			"date": 2023,
+			"type": "Projet Personnel",
+			"title": "Interactions Simples de Particules",
+			"description": "Cette simulation de particules illustre la beauté qui peut émerger d’un chaos régi par quelques règles simples, inspirées de notre propre univers et de la notion d’entropie. C’est une démonstration du potentiel de l’algorithme en tant que forme d’art.",
+			"tags":
+			[
+				{ "name": "Kotlin", "url": "https://kotlinlang.org/" },
+				{ "name": "Java", "url": "https://en.wikipedia.org/wiki/Java_(programming_language)"}
+			],
+			"links":
+			[
+				"https://github.com/Matthieu-Jck/LifeSim",
+				"https://github.com/Matthieu-Jck/LifeSim",
+				"https://github.com/Matthieu-Jck/LifeSim"
+			],
+			"video": "resources/videos/projects/Simple_Interractions.mp4",
+			"image": "resources/images/projects/SimpleInterractions.png",
+			"logo": "resources/images/projects/SimpleInterractions.png",
+			"categories": ["Personnel", "Algorithmes"]
+		}
+	]
+}

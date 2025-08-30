@@ -67,7 +67,7 @@
 
 #menu_div .menu .not_button:hover
 {
-	color: var(--links-color);
+	color: var(--buttons-color);
 }
 
 #menu_div .menu .button
@@ -75,7 +75,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: var(--links-color);
+	color: var(--buttons-color);
 	padding: 13.5px 30px 13.5px 34.5px;
 }
 
