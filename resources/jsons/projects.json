@@ -2,26 +2,26 @@
 	"projects":
 	[
 		{
-			"date": 2023,
+			"date": 2025,
 			"type": "Personal Project",
-			"title": "Portfolio",
-			"description": "You are currently navigating through this portfolio: A one-page, clean code, responsive website developed using only HTML, CSS, and JavaScript. ",
+			"title": "EnergyProphet",
+			"description": "EnergyProphet is a full-stack energy scenario simulator: a .NET API that models country-level technologies and scenarios (data-backed by JSON and pluggable AI services) paired with a modern Vite + React + TypeScript frontend for interactive scenario building and visualization. It demonstrates end-to-end development (API design, DI & services, tests, and a production-ready build pipeline) and is ready to be containerized and deployed.",
 			"tags":
 			[
-				{ "name": "HTML", "url": "https://en.wikipedia.org/wiki/HTML" },
-				{ "name": "CSS", "url": "https://en.wikipedia.org/wiki/CSS" },
-				{ "name": "JavaScript", "url": "https://en.wikipedia.org/wiki/JavaScript" }
+				{ "name": "React", "url": "https://react.dev/" },
+				{ "name": ".NET", "url": "https://dotnet.microsoft.com/en-us/" },
+				{ "name": "C#", "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" },
+				{ "name": "Vite", "url": "https://vite.dev/" }
 			],
 			"links":
 			[
-				"https://matthieu-jck.github.io/Portfolio/",
-				"https://matthieu-jck.github.io/Portfolio/",
-				"https://matthieu-jck.github.io/Portfolio/"
+				"",
+				""
 			],
-			"video": "none",
-			"image": "resources/images/projects/Portfolio.png",
-			"logo": "resources/images/projects/Portfolio.png",
-			"categories": ["Personal", "Web"]
+			"video": "resources/videos/projects/EnergyProphet.mp4",
+			"image": "resources/images/projects/EnergyProphet.png",
+			"logo": "resources/images/projects/EnergyProphet.png",
+			"categories": ["Personal", "Web Design"]
 		},
 		{
 			"date": 2024,
@@ -84,6 +84,28 @@
 			"image": "resources/images/projects/BetChess.png",
 			"logo": "resources/images/projects/BetChess.png",
 			"categories": ["Personal", "Web", "Game Design"]
+		},
+		{
+			"date": 2023,
+			"type": "Personal Project",
+			"title": "Portfolio",
+			"description": "You are currently navigating through this portfolio: A one-page, clean code, responsive website developed using only HTML, CSS, and JavaScript. ",
+			"tags":
+			[
+				{ "name": "HTML", "url": "https://en.wikipedia.org/wiki/HTML" },
+				{ "name": "CSS", "url": "https://en.wikipedia.org/wiki/CSS" },
+				{ "name": "JavaScript", "url": "https://en.wikipedia.org/wiki/JavaScript" }
+			],
+			"links":
+			[
+				"https://matthieu-jck.github.io/Portfolio/",
+				"https://matthieu-jck.github.io/Portfolio/",
+				"https://matthieu-jck.github.io/Portfolio/"
+			],
+			"video": "none",
+			"image": "resources/images/projects/Portfolio.png",
+			"logo": "resources/images/projects/Portfolio.png",
+			"categories": ["Personal", "Web"]
 		},
 		{
 			"date": 2023,
