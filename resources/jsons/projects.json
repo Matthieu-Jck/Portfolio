@@ -12,7 +12,8 @@
 				{ "name": ".NET", "url": "https://dotnet.microsoft.com/en-us/" },
 				{ "name": "C#", "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" },
 				{ "name": "Vite", "url": "https://vite.dev/" },
-				{ "name": "HuggingFace", "url": "https://huggingface.co/" }
+				{ "name": "AI", "url": "https://simple.wikipedia.org/wiki/Large_language_model" },
+				{ "name": "Docker", "url": "https://www.docker.com/" }
 			],
 			"links":
 			[
