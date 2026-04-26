@@ -5,7 +5,7 @@
 			"date": "2021-2022",
 			"type": "Ing\u00e9nieur logiciel",
 			"title": "Capgemini",
-			"description": "A\u00e9rospatial : d\u00e9veloppement du logiciel du segment sol d'une mission satellitaire d'observation de la Terre pour Airbus Defense and Space. Architecture client/serveur.",
+			"description": "Aérospatial : Développement du logiciel du segment sol d’une mission satellitaire d’observation de la Terre. Architecture Client/Serveur.",
 			"tags":
 			[
 				{ "name": "Java", "url": "https://www.java.com/en/" },
@@ -21,9 +21,9 @@
 		},
 		{
 			"date": "2022-2024",
-			"type": "Ing\u00e9nieur logiciel / full-stack",
+			"type": "Ingénieur Logiciel / FullStack",
 			"title": "Infotel",
-			"description": "A\u00e9ronautique : d\u00e9veloppement de la suite Orlando, une solution web et iOS pour la gestion des compagnies a\u00e9riennes, ainsi que d'une application web pour la gestion du CNRS.",
+			"description": "Aéronautique : Développement de la suite Orlando, une solution Web et iOS pour la gestion des compagnies aériennes, et développement d’une application web pour la gestion du CNRS.",
 			"tags":
 			[
 				{ "name": "Java", "url": "https://www.java.com/en/" },
@@ -40,9 +40,9 @@
 		},
 		{
 			"date": "2025",
-			"type": "D\u00e9veloppeur web",
+			"type": "Développeur Web",
 			"title": "Freelance",
-			"description": "Conception, d\u00e9veloppement et int\u00e9gration de deux sites web pour un sanctuaire animalier caritatif et une agence de voyage \u00e0 Perth, en Australie.",
+			"description": "Conception, développement et intégration de deux sites web pour un sanctuaire animalier caritatif et une agence de voyage à Perth, Australie.",
 			"tags":
 			[
 				{ "name": "Wordpress", "url": "https://www.wordpress.com/" },

@@ -283,6 +283,7 @@ ol
 	display: inline-flex;
 	align-items: center;
 	gap: 4px;
+	pointer-events: all;
 	padding: 5px;
 	border-radius: 999px;
 	border: 1px solid rgba(143, 223, 255, 0.18);
@@ -296,6 +297,7 @@ ol
 {
 	border: none;
 	background: transparent;
+	pointer-events: all;
 	color: var(--header-links-color);
 	font-family: raleway_semi_bold;
 	font-size: 13px;

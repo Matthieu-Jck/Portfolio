@@ -25,29 +25,29 @@ const language_content = {
 			openLiveDemo: 'Open live demo'
 		},
 		home: {
-			welcome: 'Welcome, my name is',
+			welcome: ' Welcome, my name is',
 			title: 'Software Engineer',
-			bio: 'I\'m a <span id="age">20</span>-year-old creative software engineer and full-stack developer from France. I studied computer science at <a class="link" href="https://www.insa-toulouse.fr/en/" target="_blank">INSA Toulouse</a> and I\'m open to exciting opportunities.'
+			bio: 'I\'m a <span id="age">20</span> years old, creative Software Engineer and Full-Stack Developer from France. I studied computer science at <a class="link" href="https://www.insa-toulouse.fr/en/" target="_blank">INSA Toulouse</a>. I am open to any exciting opportunity.'
 		},
 		about: {
-			title: 'About me',
-			body: 'I\'m a <b>software engineer</b> passionate about turning ideas into engaging, functional solutions across <b>web development</b>, <b>game design</b>, and <b>AI</b>.<br><br>After earning my degree at <b>INSA Toulouse</b>, I gained three years of experience in the <b>aerospace and aeronautics industry</b> with companies such as Airbus D&amp;S, Thales, and Air France, working on high-precision, mission-critical projects.<br><br>I then spent a year in Australia <b>freelancing</b> in <b>web design</b> and tutoring computer science and mathematics, which strengthened my client-facing skills as well as my English to a fluent and professional level.<br><br>I thrive in collaborative environments, enjoy customer interaction, and value clear communication as much as technical excellence. This <b>portfolio</b> highlights the projects and experiences that have shaped my journey.'
+			title: 'About me : ',
+			body: 'I\'m a <b>software engineer</b> passionate about turning ideas into engaging, functional solutions across <b>web development</b>, <b>game design</b>, and <b>AI</b>.<br><br>After earning my degree at <b>INSA Toulouse</b>, I gained three years of experience in the <b>aerospace and aeronautics industry</b> with companies such as Airbus D&amp;S, Thales, and Air France, working on high-precision, mission-critical projects.<br><br>I then spent a year in Australia <b>freelancing</b> in <b>web design</b> and tutoring computer science and mathematics, which strengthened my client-facing skills as well as my English to a fluent and professional level. I thrive in collaborative environments, enjoy customer interaction, and value clear communication as much as technical excellence.<br><br>This <b>portfolio</b> highlights the projects and experiences that have shaped my journey.<br><br>'
 		},
 		projects: {
-			title: 'Some of my projects'
+			title: 'Some of my Projects'
 		},
 		skills: {
-			title: 'Skills'
+			title: 'Skills :'
 		},
 		experience: {
-			title: 'Working experience'
+			title: 'Working experiences:'
 		},
 		contact: {
-			title: 'Contact'
+			title: 'Contacts : '
 		},
 		footer: {
 			license: '\u00a9 Matthieu Jacques',
-			mit: 'MIT License 2024',
+			mit: 'MIT license 2024',
 			source: 'See source code on my GitHub'
 		}
 	},
@@ -75,25 +75,25 @@ const language_content = {
 			openLiveDemo: 'Ouvrir la d\u00e9mo'
 		},
 		home: {
-			welcome: 'Bienvenue, je m\'appelle',
-			title: 'Ing\u00e9nieur logiciel',
-			bio: 'J\'ai <span id="age">20</span> ans, je suis <b>ing\u00e9nieur logiciel</b> et d\u00e9veloppeur full-stack cr\u00e9atif, originaire de France. J\'ai \u00e9tudi\u00e9 l\'informatique \u00e0 <a class="link" href="https://www.insa-toulouse.fr/" target="_blank">l\'INSA Toulouse</a> et je suis ouvert \u00e0 de belles opportunit\u00e9s.'
+			welcome: ' Bienvenue, je m\'appelle',
+			title: 'Ingénieur logiciel',
+			bio: 'J\'ai <span id="age">20</span> ans, je suis ingénieur logiciel créatif et développeur full-stack, originaire de France. J\'ai étudié l\'informatique à <a class="link" href="https://www.insa-toulouse.fr/" target="_blank">l\'INSA Toulouse</a>. Je suis ouvert à toute opportunité enthousiasmante.'
 		},
 		about: {
-			title: '\u00c0 propos',
-			body: 'Je suis un <b>ing\u00e9nieur logiciel</b> passionn\u00e9 par la transformation d\'id\u00e9es en solutions utiles, soign\u00e9es et engageantes, entre <b>d\u00e9veloppement web</b>, <b>game design</b> et <b>IA</b>.<br><br>Apr\u00e8s mon dipl\u00f4me \u00e0 <b>l\'INSA Toulouse</b>, j\'ai acquis trois ans d\'exp\u00e9rience dans les secteurs <b>a\u00e9rospatial et a\u00e9ronautique</b> aupr\u00e8s d\'entreprises comme Airbus D&amp;S, Thales et Air France, sur des projets de haute pr\u00e9cision et critiques.<br><br>J\'ai ensuite pass\u00e9 un an en Australie en tant que <b>freelance</b> en <b>web design</b>, tout en donnant des cours d\'informatique et de math\u00e9matiques. Cette exp\u00e9rience a renforc\u00e9 mes comp\u00e9tences client ainsi que mon anglais, aujourd\'hui fluide et professionnel.<br><br>J\'aime travailler en \u00e9quipe, le contact avec les clients et les environnements o\u00f9 la communication claire compte autant que la qualit\u00e9 technique. Ce <b>portfolio</b> regroupe les projets et exp\u00e9riences qui ont construit mon parcours.'
+			title: 'À propos : ',
+			body: 'Je suis un <b>ingénieur logiciel</b> passionné par la transformation d\'idées en solutions engageantes et fonctionnelles dans les domaines du <b>développement web</b>, du <b>game design</b> et de l\'<b>IA</b>.<br><br>Après avoir obtenu mon diplôme à l\'<b>INSA Toulouse</b>, j\'ai acquis trois ans d\'expérience dans l\'<b>industrie aérospatiale et aéronautique</b> avec des entreprises comme Airbus D&amp;S, Thales et Air France, en travaillant sur des projets critiques de haute précision.<br><br>J\'ai ensuite passé un an en Australie en tant que <b>freelance</b> en <b>web design</b> et professeur particulier en informatique et en mathématiques, ce qui a renforcé mes compétences relationnelles ainsi que mon niveau d\'anglais, aujourd\'hui fluent et professionnel. J\'évolue très bien dans les environnements collaboratifs, j\'apprécie la relation client et j\'accorde autant d\'importance à la communication claire qu\'à l\'excellence technique.<br><br>Ce <b>portfolio</b> met en avant les projets et expériences qui ont façonné mon parcours.<br><br>'
 		},
 		projects: {
 			title: 'Quelques projets'
 		},
 		skills: {
-			title: 'Comp\u00e9tences'
+			title: 'Compétences :'
 		},
 		experience: {
-			title: 'Exp\u00e9rience professionnelle'
+			title: 'Expériences professionnelles :'
 		},
 		contact: {
-			title: 'Contact'
+			title: 'Contacts : '
 		},
 		footer: {
 			license: '\u00a9 Matthieu Jacques',

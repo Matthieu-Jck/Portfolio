@@ -5,7 +5,7 @@
 			"date": 2025,
 			"type": "Projet personnel",
 			"title": "EnergyProphet",
-			"description": "EnergyProphet est un simulateur full-stack de production \u00e9lectrique qui mod\u00e9lise les technologies et sc\u00e9narios \u00e0 l'\u00e9chelle d'un pays. L'API est reli\u00e9e \u00e0 un LLM qui analyse les choix de l'utilisateur.",
+			"description": "EnergyProphet est un simulateur full-stack de production d'\u00e9lectricit\u00e9 qui mod\u00e9lise diff\u00e9rentes technologies et sc\u00e9narios \u00e0 l'\u00e9chelle d'un pays. L'API est reli\u00e9e \u00e0 un LLM qui analyse les choix de l'utilisateur.",
 			"tags":
 			[
 				{ "name": "React", "url": "https://react.dev/" },
@@ -30,7 +30,7 @@
 			"date": 2024,
 			"type": "Projet personnel",
 			"title": "PhotonBreak",
-			"description": "PhotonBreak est un jeu d'arcade 2D dans lequel vous guidez un photon \u00e0 l'aide de la gravit\u00e9 en cr\u00e9ant diff\u00e9rents corps c\u00e9lestes, comme des trous noirs. Disponible sur l'App Store et le Play Store en 2025.",
+			"description": "PhotonBreak est un jeu d’arcade 2D dans lequel vous guidez un photon en avant grâce à la gravité, en créant différents corps célestes comme des trous noirs.\nDisponible sur l’App Store et le Play Store en 2025.",
 			"tags":
 			[
 				{ "name": "Unity", "url": "https://en.wikipedia.org/wiki/Unity_(game_engine)" },
@@ -49,8 +49,8 @@
 		{
 			"date": 2025,
 			"type": "Projet freelance",
-			"title": "Site web d'agence de voyage",
-			"description": "J'ai travaill\u00e9 avec TheTravellingSoul comme d\u00e9veloppeur freelance durant mon voyage en Australie, o\u00f9 j'ai r\u00e9alis\u00e9 ce site web.",
+			"title": "Site Web TheTravellingSoul (Agence de voyage)",
+			"description": "J’ai travaillé sur ce site web en tant que développeur freelance durant mon voyage en Australie.",
 			"tags":
 			[
 				{ "name": "Wordpress", "url": "https://www.wordpress.com/" },
@@ -72,7 +72,7 @@
 			"date": 2024,
 			"type": "Projet personnel",
 			"title": "BetChess",
-			"description": "BetChess est une application d'\u00e9checs en ligne multijoueur avec une r\u00e8gle originale : \u00e0 chaque tour, vous pariez sur le prochain coup de votre adversaire. Si vous devinez juste, vous jouez deux fois au tour suivant. Le serveur d'h\u00e9bergement utilise actuellement une offre gratuite et peut mettre un peu de temps \u00e0 se lancer.",
+			"description": "BetChess est un site d’échecs en ligne avec une particularité : à chaque tour, vous pariez sur le prochain coup de votre adversaire. Si vous devinez correctement, vous jouez deux fois !\n(AVERTISSEMENT : le serveur hébergeant ce projet utilise actuellement un plan gratuit, le chargement peut donc être long).",
 			"tags":
 			[
 				{ "name": "JavaScript", "url": "https://en.wikipedia.org/wiki/JavaScript" },
@@ -92,7 +92,7 @@
 			"date": 2023,
 			"type": "Projet personnel",
 			"title": "Portfolio",
-			"description": "Vous naviguez actuellement sur ce portfolio : un site web one-page, responsive et soign\u00e9, d\u00e9velopp\u00e9 uniquement en HTML, CSS et JavaScript.",
+			"description": "Vous naviguez actuellement dans ce portfolio — un site web d’une seule page, propre et réactif, développé uniquement en HTML, CSS et JavaScript.",
 			"tags":
 			[
 				{ "name": "HTML", "url": "https://en.wikipedia.org/wiki/HTML" },
@@ -114,7 +114,7 @@
 			"date": 2023,
 			"type": "Projet personnel",
 			"title": "Water Paths",
-			"description": "Water Paths est mon tout premier projet Unity : un jeu de r\u00e9flexion 2D centr\u00e9 sur la physique de l'eau. Les joueurs doivent d\u00e9placer strat\u00e9giquement des briques pour guider l'eau et ses diff\u00e9rents \u00e9tats, avec une histoire discr\u00e8te et de l\u00e9gers dialogues qui accompagnent le gameplay.",
+			"description": "Water Paths est mon tout premier projet Unity — un jeu de réflexion 2D centré sur la physique de l’eau.\nLes joueurs doivent déplacer stratégiquement des briques pour guider l’eau et ses différents états, avec une histoire douce et de légers dialogues accompagnant le gameplay.",
 			"tags":
 			[
 				{ "name": "Unity", "url": "https://en.wikipedia.org/wiki/Unity_(game_engine)" },
@@ -135,7 +135,7 @@
 			"date": 2023,
 			"type": "Projet personnel",
 			"title": "Interactions simples de particules",
-			"description": "Cette simulation de particules met en valeur la beaut\u00e9 qui peut \u00e9merger d'un chaos gouvern\u00e9 par quelques r\u00e8gles simples, inspir\u00e9es de notre univers et de la notion d'entropie. Une d\u00e9monstration du potentiel de l'algorithme comme forme d'art.",
+			"description": "Cette simulation de particules illustre la beauté qui peut émerger d’un chaos régi par quelques règles simples, inspirées de notre propre univers et de la notion d’entropie. C’est une démonstration du potentiel de l’algorithme en tant que forme d’art.",
 			"tags":
 			[
 				{ "name": "Kotlin", "url": "https://kotlinlang.org/" },
