@@ -40,13 +40,15 @@
 		},
 		{
 			"date": "2025",
-			"type": "Web Developer",
+			"type": "Freelance Full-Stack Developer",
 			"title": "Freelance",
-			"description": "Designed, developed, and integrated two websites for a charitable animal sanctuary and travel agency in Perth, Australia.",
+			"description": "Delivered multiple freelance projects for Australian clients, including TheTravellingSoul's travel website as well as custom web applications built with Java, Angular, and React. I handled development, integration, and client-facing delivery end to end.",
 			"tags":
 			[
+				{ "name": "Java", "url": "https://www.java.com/en/" },
+				{ "name": "Angular", "url": "https://angular.io/" },
+				{ "name": "React", "url": "https://react.dev/" },
 				{ "name": "Wordpress", "url": "https://www.wordpress.com/" },
-				{ "name": "Notion", "url": "https://www.notion.com" },
 				{ "name": "Figma", "url": "https://www.figma.com" }
 			],
 			"link": "https://thetravellingsoul.com.au/",

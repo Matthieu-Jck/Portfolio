@@ -6,6 +6,12 @@ function projects_events()
 	let done = [];
 	let elements = [];
 
+	function is_removed_project(project)
+	{
+		const hidden_titles = ['Simple Particle Interactions', 'Interactions simples de particules'];
+		return hidden_titles.includes(project.title);
+	}
+
 	async function animated_check()
 	{
 		for (let i = 0; i < elements.length; i++)
@@ -164,6 +170,7 @@ function projects_events()
 
 	function generate(data)
 	{
+		data.projects = data.projects.filter(project => !is_removed_project(project));
 		document.querySelector('#projects_section .projects_content').innerHTML = '';
 		document.querySelector('#projects_section .other_projects_content').innerHTML = '';
 		let inverted = true;

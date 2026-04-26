@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">GogoleTranslate icon</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07182b"/>
+      <stop offset="100%" stop-color="#15466c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ff3ff"/>
+      <stop offset="100%" stop-color="#2db4ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+  <circle cx="128" cy="128" r="76" fill="#effcff" opacity="0.12"/>
+  <path d="M84 110c0-24 19-44 49-44 20 0 36 7 50 22l-22 20c-8-9-18-13-28-13-17 0-28 10-28 25 0 15 11 25 28 25 9 0 19-3 28-12v-6h-31v-26h61v44c-16 19-37 29-61 29-30 0-46-18-46-44z" fill="url(#accent)"/>
+  <path d="M74 182h108" stroke="#6ff3ff" stroke-width="12" stroke-linecap="round" opacity="0.75"/>
+</svg>

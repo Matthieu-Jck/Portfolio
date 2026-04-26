@@ -17,14 +17,14 @@
 #about_section .about_content
 {
 	display: flex;
-	gap: 100px 100px;
+	gap: 56px 56px;
 	width: 100%;
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: row;
 }
 
-@media screen and (max-width: 1300px) { #about_section .about_content { gap: 50px 50px; } }
+@media screen and (max-width: 1300px) { #about_section .about_content { gap: 40px 40px; } }
 
 @media screen and (max-width: 800px)
 {
@@ -47,6 +47,8 @@
 
 #about_section .about_content .p_1
 {
+	flex: 1 1 0;
+	max-width: 760px;
 	font-family: calibre_regular;
 	font-size: 20px;
 	color: var(--text-color-1);
@@ -56,6 +58,7 @@
 
 #about_section .photo
 {
+	flex: 0 0 auto;
 	width: fit-content;
 	display: flex;
 	justify-content: center;

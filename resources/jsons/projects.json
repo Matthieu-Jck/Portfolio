@@ -2,6 +2,30 @@
 	"projects":
 	[
 		{
+			"date": 2026,
+			"type": "Personal Project",
+			"title": "GogoleTranslate",
+			"description": "GogoleTranslate is an AI-powered full-stack writing assistant that rewrites text into different tones and presets. I built the Angular frontend, the Java backend, and the deployment pipeline for a polished end-to-end product.",
+			"tags":
+			[
+				{ "name": "Angular", "url": "https://angular.dev/" },
+				{ "name": "Java", "url": "https://www.java.com/en/" },
+				{ "name": "Spring Boot", "url": "https://spring.io/projects/spring-boot" },
+				{ "name": "OpenAI", "url": "https://openai.com/" },
+				{ "name": "Docker", "url": "https://www.docker.com/" }
+			],
+			"links":
+			[
+				"https://gogoletranslate-web.fly.dev/",
+				"https://github.com/Matthieu-Jck/GogoleTranslate",
+				"https://gogoletranslate-web.fly.dev/"
+			],
+			"video": "none",
+			"image": "resources/images/projects/GogoleTranslate.svg",
+			"logo": "resources/images/projects/GogoleTranslate-icon.svg",
+			"categories": ["Personal", "Web Design", "AI"]
+		},
+		{
 			"date": 2025,
 			"type": "Personal Project",
 			"title": "EnergyProphet",

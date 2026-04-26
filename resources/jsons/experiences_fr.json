@@ -5,7 +5,7 @@
 			"date": "2021-2022",
 			"type": "Ing\u00e9nieur logiciel",
 			"title": "Capgemini",
-			"description": "Aérospatial : Développement du logiciel du segment sol d’une mission satellitaire d’observation de la Terre. Architecture Client/Serveur.",
+			"description": "A\u00e9rospatial : D\u00e9veloppement du logiciel du segment sol d'une mission satellitaire d'observation de la Terre. Architecture Client/Serveur.",
 			"tags":
 			[
 				{ "name": "Java", "url": "https://www.java.com/en/" },
@@ -21,9 +21,9 @@
 		},
 		{
 			"date": "2022-2024",
-			"type": "Ingénieur Logiciel / FullStack",
+			"type": "Ing\u00e9nieur Logiciel / FullStack",
 			"title": "Infotel",
-			"description": "Aéronautique : Développement de la suite Orlando, une solution Web et iOS pour la gestion des compagnies aériennes, et développement d’une application web pour la gestion du CNRS.",
+			"description": "A\u00e9ronautique : D\u00e9veloppement de la suite Orlando, une solution Web et iOS pour la gestion des compagnies a\u00e9riennes, et d\u00e9veloppement d'une application web pour la gestion du CNRS.",
 			"tags":
 			[
 				{ "name": "Java", "url": "https://www.java.com/en/" },
@@ -40,13 +40,15 @@
 		},
 		{
 			"date": "2025",
-			"type": "Développeur Web",
+			"type": "D\u00e9veloppeur freelance full-stack",
 			"title": "Freelance",
-			"description": "Conception, développement et intégration de deux sites web pour un sanctuaire animalier caritatif et une agence de voyage à Perth, Australie.",
+			"description": "R\u00e9alisation de plusieurs projets freelance pour des clients australiens, dont le site de voyage TheTravellingSoul, ainsi que des applications web sur mesure en Java, Angular et React. J'ai g\u00e9r\u00e9 le d\u00e9veloppement, l'int\u00e9gration et la livraison client de bout en bout.",
 			"tags":
 			[
+				{ "name": "Java", "url": "https://www.java.com/en/" },
+				{ "name": "Angular", "url": "https://angular.io/" },
+				{ "name": "React", "url": "https://react.dev/" },
 				{ "name": "Wordpress", "url": "https://www.wordpress.com/" },
-				{ "name": "Notion", "url": "https://www.notion.com" },
 				{ "name": "Figma", "url": "https://www.figma.com" }
 			],
 			"link": "https://thetravellingsoul.com.au/",

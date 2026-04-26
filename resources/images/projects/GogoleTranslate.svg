@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+  <title id="title">GogoleTranslate project preview</title>
+  <desc id="desc">A stylized preview for the GogoleTranslate AI writing assistant.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07182b"/>
+      <stop offset="50%" stop-color="#0c3454"/>
+      <stop offset="100%" stop-color="#12395e"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#effcff"/>
+      <stop offset="100%" stop-color="#d8f6ff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#67e4ff"/>
+      <stop offset="100%" stop-color="#2cb0ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1440" height="810" fill="url(#bg)"/>
+  <circle cx="1240" cy="130" r="170" fill="#67e4ff" opacity="0.16"/>
+  <circle cx="180" cy="680" r="220" fill="#8ef7ff" opacity="0.1"/>
+
+  <rect x="126" y="108" width="1188" height="594" rx="34" fill="#081728" opacity="0.92" stroke="#6fdfff" stroke-opacity="0.24"/>
+  <rect x="176" y="160" width="1088" height="490" rx="28" fill="#0a2138"/>
+
+  <rect x="226" y="206" width="286" height="398" rx="24" fill="url(#panel)"/>
+  <rect x="548" y="206" width="666" height="398" rx="24" fill="url(#panel)"/>
+
+  <rect x="248" y="234" width="132" height="34" rx="17" fill="#06233f"/>
+  <text x="314" y="257" fill="#effcff" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">STYLE</text>
+
+  <rect x="394" y="234" width="92" height="34" rx="17" fill="#d9f8ff"/>
+  <text x="440" y="257" fill="#0d3558" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">FR</text>
+
+  <rect x="578" y="236" width="180" height="28" rx="14" fill="#d4f4ff"/>
+  <rect x="772" y="236" width="116" height="28" rx="14" fill="#d4f4ff" opacity="0.75"/>
+  <rect x="902" y="236" width="182" height="28" rx="14" fill="#d4f4ff" opacity="0.6"/>
+
+  <rect x="252" y="292" width="234" height="94" rx="18" fill="#e9fbff"/>
+  <rect x="252" y="406" width="234" height="74" rx="18" fill="#e9fbff"/>
+  <rect x="252" y="500" width="234" height="74" rx="18" fill="#e9fbff"/>
+
+  <rect x="578" y="292" width="606" height="112" rx="22" fill="#ffffff"/>
+  <rect x="578" y="426" width="606" height="56" rx="18" fill="#eafaff"/>
+  <rect x="578" y="500" width="446" height="56" rx="18" fill="#eafaff"/>
+
+  <rect x="226" y="646" width="246" height="18" rx="9" fill="#6fdfff" opacity="0.55"/>
+  <rect x="498" y="646" width="246" height="18" rx="9" fill="#6fdfff" opacity="0.4"/>
+  <rect x="770" y="646" width="246" height="18" rx="9" fill="#6fdfff" opacity="0.25"/>
+
+  <text x="252" y="340" fill="#0d3558" font-family="Arial, sans-serif" font-size="26" font-weight="700">Preset</text>
+  <text x="252" y="372" fill="#29597f" font-family="Arial, sans-serif" font-size="22">Professional</text>
+  <text x="252" y="450" fill="#29597f" font-family="Arial, sans-serif" font-size="22">Friendly tone</text>
+  <text x="252" y="544" fill="#29597f" font-family="Arial, sans-serif" font-size="22">Sharper CTA</text>
+
+  <text x="604" y="344" fill="#0f3558" font-family="Arial, sans-serif" font-size="34" font-weight="700">GogoleTranslate</text>
+  <text x="604" y="388" fill="#315e81" font-family="Arial, sans-serif" font-size="24">AI-powered tone translation for modern writing</text>
+  <text x="604" y="462" fill="#315e81" font-family="Arial, sans-serif" font-size="22">Angular frontend, Java backend, prompt-driven rewriting</text>
+  <text x="604" y="536" fill="#315e81" font-family="Arial, sans-serif" font-size="22">Fast presets, clean UX, production deployment</text>
+
+  <rect x="1030" y="498" width="154" height="60" rx="30" fill="url(#accent)"/>
+  <text x="1107" y="536" fill="#06233f" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Translate</text>
+</svg>
