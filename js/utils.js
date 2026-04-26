@@ -42,3 +42,22 @@ function read_json(url, callback)
 
 	xhr.send();
 }
+
+function is_missing_value(value)
+{
+	if (value === undefined || value === null)
+		return true;
+
+	if (typeof value !== 'string')
+		return false;
+
+	return ['none', 'aucune', 'aucun', ''].includes(value.trim().toLowerCase());
+}
+
+function get_localized_json_path(default_path)
+{
+	if (typeof get_current_language === 'function' && get_current_language() === 'fr')
+		return default_path.replace('.json', '_fr.json');
+
+	return default_path;
+}

@@ -9,6 +9,7 @@ async function animateds() {
 window.onload = () => {
 	document.documentElement.scrollLeft = 0;
 
+	language_events();
 	header_events();
 	home_events();
 	projects_events();

@@ -86,6 +86,7 @@ function header_events()
 			document.querySelector('#header_div').style.boxShadow = 'none';
 			document.querySelector('#header_div').style.pointerEvents = 'none';
 			document.querySelector('#header').style.backgroundColor = 'rgba(16, 29, 48, 0)';
+			document.querySelector('#header').style.borderColor = 'transparent';
 			document.querySelector('#header').style.backdropFilter = 'none';
 			document.querySelector('#header').style.webkitBackdropFilter = 'none';
 			header_detached = false;
@@ -97,6 +98,7 @@ function header_events()
 			document.querySelector('#header_div').style.boxShadow = '0px 5px 30px rgba(0, 0, 0, 0.7)';
 			document.querySelector('#header_div').style.pointerEvents = 'all';
 			document.querySelector('#header').style.backgroundColor = 'var(--header-color)';
+			document.querySelector('#header').style.borderColor = 'rgba(143, 223, 255, 0.08)';
 			document.querySelector('#header').style.backdropFilter = 'blur(8px)';
 			document.querySelector('#header').style.webkitBackdropFilter = 'blur(8px)';
 			header_detached = true;

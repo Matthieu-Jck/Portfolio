@@ -1,6 +1,9 @@
 #projects_section
 {
-	background-color: var(--section-color-2);
+	background:
+		radial-gradient(circle at 8% 12%, rgba(111, 225, 255, 0.12), transparent 24%),
+		radial-gradient(circle at 90% 20%, rgba(79, 136, 255, 0.12), transparent 22%),
+		linear-gradient(180deg, #06111e 0%, #04101b 100%);
 }
 
 .projects_end
@@ -53,12 +56,12 @@
 
 #projects_section .sort_choices .choice:hover
 {
-	background-color: var(--bio-color);
+	background-color: rgba(111, 225, 255, 0.12);
 }
 
 #projects_section .sort_choices .choice.selected
 {
-	color: var(--section-items-color);
+	color: #04111e;
 	background-color: var(--selected-button-color);
 	cursor: default;
 	pointer-events: none;
@@ -66,7 +69,7 @@
 
 #projects_section .sort_choices .choice.selected:hover
 {
-	background-color: var(--links-color);
+	background-color: var(--selected-button-color);
 }
 
 #projects_section .projects_content
@@ -122,21 +125,26 @@
 	position: relative;
 }
 
-#projects_section .project_view a
+#projects_section .project_view a,
+#projects_section .project_view .project_media
 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: calc(clamp(400px, 40vw, 600px) * 1.05);
 	overflow: hidden;
-	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
-	border-radius: 15px;
-	transition: filter 0.3s ease;
+	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
+	border-radius: 24px;
+	border: 1px solid var(--card-border-dark);
+	background: rgba(3, 15, 25, 0.35);
+	transition: filter 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 
 #projects_section .project_view a:hover
 {
-	filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.7));
+	filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.65));
+	transform: translateY(-6px);
+	border-color: rgba(143, 223, 255, 0.35);
 }
 
 #projects_section .project_view video
@@ -195,6 +203,7 @@
 
 #projects_section .project_text .project_title
 {
+	display: inline-block;
 	font-family: calibre_semi_bold;
 	font-size: 32px;
 	color: var(--title-2-color);
@@ -204,30 +213,40 @@
 	transition: color 0.2s ease;
 }
 
+#projects_section .project_text .project_title.static
+{
+	cursor: default;
+}
+
 #projects_section .inverted .project_text .project_title
 {
 	margin-left: 0px;
 	margin-right: 15px;
 }
 
-#projects_section .project_text .project_title:hover
+#projects_section .project_text a.project_title:hover
 {
 	color: var(--links-color);
 }
 
 #projects_section .project_text .text
 {
-	background-color: var(--section-items-color);
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 15px;
+	background: rgba(8, 53, 82, 0.72);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid var(--card-border-dark);
+	box-shadow: var(--card-shadow-dark);
+	border-radius: 24px;
 	padding: 25px 25px 25px 25px;
 	margin-bottom: 19px;
-	transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 
 #projects_section .project_text .text:hover
 {
-	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 26px 80px rgba(0, 0, 0, 0.38);
+	transform: translateY(-4px);
+	border-color: rgba(143, 223, 255, 0.28);
 }
 
 #projects_section .project_text .text p
@@ -236,6 +255,7 @@
 	font-size: 20px;
 	text-align: start;
 	color: var(--text-color-2);
+	line-height: 1.45;
 }
 
 #projects_section .inverted .project_text .text p
@@ -265,18 +285,21 @@
 #projects_section .project_text .tags a
 {
 	font-family: raleway_semi_bold;
-	font-size: 16px;
+	font-size: 15px;
 	color: var(--links-color);
 	text-decoration: none;
 	opacity: 1;
-	padding: 3px 6px 3px 6px;
+	padding: 6px 10px;
 	white-space: nowrap;
-	transition: opacity 0.2s ease;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.05);
+	transition: opacity 0.2s ease, background-color 0.2s ease;
 }
 
 #projects_section .project_text .tags a:hover
 {
-	opacity: 0.5;
+	opacity: 1;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 #projects_section .project_text .links
@@ -286,6 +309,7 @@
 	align-items: center;
 	margin-left: 15px;
 	gap: 20px;
+	min-height: 24px;
 }
 
 #projects_section .inverted .project_text .links
@@ -313,12 +337,13 @@
 	stroke-linejoin: round;
 	stroke: var(--color);
 	opacity: 1;
-	transition: opacity 0.2s ease;
+	transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 #projects_section .project_text .links svg:hover
 {
-	opacity: 0.6;
+	opacity: 0.85;
+	transform: translateY(-2px);
 }
 
 #projects_section .project_text .links a
@@ -326,6 +351,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
 #projects_section .project_text .links .bubble
@@ -334,7 +360,7 @@
 	position: absolute;
 	text-align: center;
 	bottom: -45px;
-	color: var(--section-items-color);
+	color: #06111e;
 	padding: 6px 12px 6px 12px;
 	background-color: var(--color);
 	font-family: raleway_bold;
@@ -360,7 +386,7 @@
 
 #projects_section .project_text .links a:hover .bubble
 {
-	opacity: 0.8;
+	opacity: 0.88;
 }
 
 .lds-ring
@@ -406,28 +432,14 @@
 
 @-webkit-keyframes lds-ring
 {
-	0%
-	{
-		transform: rotate(0deg);
-	}
-
-	100%
-	{
-		transform: rotate(360deg);
-	}
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
 
 @keyframes lds-ring
 {
-	0%
-	{
-		transform: rotate(0deg);
-	}
-
-	100%
-	{
-		transform: rotate(360deg);
-	}
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
 
 @media screen and (max-width: 780px)
@@ -436,9 +448,11 @@
 	{
 		background-size: cover;
 		background-position: center;
-		border-radius: 15px;
+		border-radius: 24px;
 		filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
 		transition: filter 0.3s ease;
+		border: 1px solid rgba(143, 223, 255, 0.12);
+		overflow: hidden;
 	}
 
 	#projects_section .project:hover
@@ -452,8 +466,8 @@
 		margin-left: 0px;
 		margin-right: 0px;
 		padding: 60px 40px 60px 40px;
-		background-color: rgba(52, 52, 102, 0.88);
-		border-radius: 15px;
+		background: linear-gradient(180deg, rgba(6, 26, 45, 0.88), rgba(7, 45, 70, 0.78));
+		border-radius: 24px;
 	}
 
 	@media screen and (max-width: 500px)
@@ -479,12 +493,14 @@
 		background: none;
 		box-shadow: none;
 		border-radius: 0px;
+		border: none;
 		padding: 10px 0px 8px 0px;
 	}
 
 	#projects_section .project_text .text:hover
 	{
 		box-shadow: none;
+		transform: none;
 	}
 
 	#projects_section .project_text .text p

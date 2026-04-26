@@ -5,7 +5,7 @@ function projects_events()
 	let sort_by = 'Default';
 	let done = [];
 	let elements = [];
-	
+
 	async function animated_check()
 	{
 		for (let i = 0; i < elements.length; i++)
@@ -21,19 +21,60 @@ function projects_events()
 			}
 	}
 
-	window.addEventListener('scroll', (e) =>
+	window.addEventListener('scroll', () =>
 	{
 		animated_check();
 	});
 
-	window.addEventListener('resize', (e) =>
+	window.addEventListener('resize', () =>
 	{
 		animated_check();
 	});
+
+	function get_primary_link(project)
+	{
+		for (let link of project.links)
+			if (!is_missing_value(link))
+				return link;
+
+		return '';
+	}
+
+	function get_title_markup(project, class_name)
+	{
+		const primary_link = get_primary_link(project);
+
+		if (is_missing_value(primary_link))
+			return `<span class="${class_name} static">${project.title}</span>`;
+
+		return `<a class="${class_name}" href="${primary_link}" target="_blank">${project.title}</a>`;
+	}
+
+	function get_featured_media(project)
+	{
+		const primary_link = get_primary_link(project);
+		const has_video = !is_missing_value(project.video) && !is_safari();
+		const media = `
+			<img src="${project.image}" alt="${project.title.toLowerCase()} image" width="1440px" height="810px"/>
+			${has_video ? `
+			<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+			<video loop muted preload="metadata">
+				<source src="${project.video}" type="video/mp4"/>
+			</video>` : ''}`;
+
+		if (is_missing_value(primary_link))
+			return `<div class="project_media">${media}</div>`;
+
+		return `<a ${is_safari() ? 'class="safari_fix"' : ''} href="${primary_link}" target="_blank">${media}</a>`;
+	}
 
 	function add_project(project, inverted, featured)
 	{
 		let tags = '';
+		const code_label = get_translation('actions.seeCode') || 'See the code';
+		const live_label = get_translation('actions.openLiveDemo') || 'Open live demo';
+		const has_source_link = !is_missing_value(project.links[1]);
+		const has_live_link = !is_missing_value(project.links[2]);
 
 		if (featured)
 		{
@@ -47,30 +88,21 @@ function projects_events()
 						<div class="project_text">
 							<div class="type">
 								<span>${project.date}</span>
-								<span>•</span>
+								<span>&bull;</span>
 								<span>${project.type}</span>
 							</div>
-							<a class="project_title" href="${project.links[0]}" target="_blank">${project.title}</a>
+							${get_title_markup(project, 'project_title')}
 							<div class="text"><p>${project.description}</p></div>
-							<div class="tags">` + tags + `</div>
-							<div class="links">` + (project.links[1] == 'none' ? '' : `
-								<a class="github" href="${project.links[1]}" target="_blank">
+							<div class="tags">${tags}</div>
+							<div class="links">${has_source_link ? `
+								<a class="github" href="${project.links[1]}" aria-label="${code_label}" title="${code_label}" target="_blank">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.05 20.31"><g><path d="M7.26 16.34c-4.11 1.23-4.11-2.06-5.76-2.47M13 18.81V15.62a2.78 2.78 0 0 0-.77-2.15c2.59-.28 5.3-1.26 5.3-5.76a4.46 4.46 0 0 0-1.23-3.08 4.18 4.18 0 0 0-.08-3.11s-1-.29-3.22 1.22a11 11 0 0 0-5.76 0C5 1.23 4 1.52 4 1.52A4.18 4.18 0 0 0 4 4.63 4.48 4.48 0 0 0 2.73 7.74c0 4.46 2.72 5.44 5.31 5.76a2.8 2.8 0 0 0-.78 2.12v3.19"/></g></svg>
-									<span class="bubble">See the code</span>
-								</a>
-								`) +`
+									<span class="bubble">${code_label}</span>
+								</a>` : ''}
 							</div>
 						</div>
 						<div class="project_view">
-							<a ${is_safari() ? 'class="safari_fix"' : ''} href="${project.links[0]}" target="_blank">
-								<img src="${project.image}" alt="${project.title.toLowerCase()} image" width="1440px" height="810px"/>
-								` + (project.video == 'none' || is_safari() ? '' : `
-								<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-								<video loop muted preload="metadata">
-									<source src="${project.video}" type="video/mp4"/>
-								</video>
-								`) + `
-							</a>
+							${get_featured_media(project)}
 						</div>
 					</div>`;
 			}
@@ -79,21 +111,20 @@ function projects_events()
 			{
 				document.querySelector('#projects_section .projects_content').innerHTML += `
 					<div class="animated project ${is_safari() ? 'safari_fix' : ''}" style="background-image: url(${project.image});">
-						<div class="project_text"">
+						<div class="project_text">
 							<div class="type">
 								<span>${project.type}</span>
-								<span>•</span>
+								<span>&bull;</span>
 								<span>${project.date}</span>
 							</div>
-							<a class="project_title" href="${project.links[0]}" target="_blank">${project.title}</a>
+							${get_title_markup(project, 'project_title')}
 							<div class="text"><p>${project.description}</p></div>
-							<div class="tags">` + tags + `</div>
-							<div class="links">` + (project.links[1] == 'none' ? '' : `
-								<a class="github" href="${project.links[1]}" target="_blank">
+							<div class="tags">${tags}</div>
+							<div class="links">${has_source_link ? `
+								<a class="github" href="${project.links[1]}" aria-label="${code_label}" title="${code_label}" target="_blank">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.05 20.31"><g><path d="M7.26 16.34c-4.11 1.23-4.11-2.06-5.76-2.47M13 18.81V15.62a2.78 2.78 0 0 0-.77-2.15c2.59-.28 5.3-1.26 5.3-5.76a4.46 4.46 0 0 0-1.23-3.08 4.18 4.18 0 0 0-.08-3.11s-1-.29-3.22 1.22a11 11 0 0 0-5.76 0C5 1.23 4 1.52 4 1.52A4.18 4.18 0 0 0 4 4.63 4.48 4.48 0 0 0 2.73 7.74c0 4.46 2.72 5.44 5.31 5.76a2.8 2.8 0 0 0-.78 2.12v3.19"/></g></svg>
-									<span class="bubble">See the code</span>
-								</a>
-								`) + `
+									<span class="bubble">${code_label}</span>
+								</a>` : ''}
 							</div>
 						</div>
 					</div>`;
@@ -112,21 +143,20 @@ function projects_events()
 							<div class="logos">
 								<img src="${project.logo}" alt="${project.title.toLowerCase()} logo" width="45px" height="45px"/>
 								<div class="links">
-									` + (project.links[1] == 'none' ? '' : `
-									<a class="github" href="${project.links[1]}" aria-label="github" target="_blank">
+									${has_source_link ? `
+									<a class="github" href="${project.links[1]}" aria-label="${code_label}" title="${code_label}" target="_blank">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.05 20.31"><g><path d="M7.26 16.34c-4.11 1.23-4.11-2.06-5.76-2.47M13 18.81V15.62a2.78 2.78 0 0 0-.77-2.15c2.59-.28 5.3-1.26 5.3-5.76a4.46 4.46 0 0 0-1.23-3.08 4.18 4.18 0 0 0-.08-3.11s-1-.29-3.22 1.22a11 11 0 0 0-5.76 0C5 1.23 4 1.52 4 1.52A4.18 4.18 0 0 0 4 4.63 4.48 4.48 0 0 0 2.73 7.74c0 4.46 2.72 5.44 5.31 5.76a2.8 2.8 0 0 0-.78 2.12v3.19"/></g></svg>
-									</a>
-									`) + (project.links[2] == 'none' ? '' : `
-									<a class="test" href="${project.links[2]}" aria-label="test" target="_blank">
+									</a>` : ''}
+									${has_live_link ? `
+									<a class="test" href="${project.links[2]}" aria-label="${live_label}" title="${live_label}" target="_blank">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.09 18.64"><g><path d="M14.55 7.52 4.62 1.78A2.08 2.08 0 0 0 1.5 3.58V15.05a2.08 2.08 0 0 0 3.12 1.8l9.93-5.73A2.08 2.08 0 0 0 14.55 7.52Z"/></g></svg>
-									</a>
-									`) + `
+									</a>` : ''}
 								</div>
 							</div>
-							<a href="${project.links[0]}" target="_blank" class="project_title">${project.title}</a>
+							${get_title_markup(project, 'project_title')}
 							<p class="text">${project.description}</p>
 						</div>
-						<div class="tags">` + tags + `</div>
+						<div class="tags">${tags}</div>
 					</div>
 				</div>`;
 		}
@@ -171,8 +201,8 @@ function projects_events()
 
 		animated_check();
 		videos_scroll_event();
-		var videos = document.querySelectorAll('video');
-		videos.forEach(video => {
+		document.querySelectorAll('video').forEach((video) =>
+		{
 			video.addEventListener('mouseenter', toggleSound);
 			video.addEventListener('mouseleave', toggleSound);
 		});
@@ -180,7 +210,7 @@ function projects_events()
 
 	function generate_projects()
 	{
-		read_json("resources/jsons/projects.json", generate);
+		read_json(get_localized_json_path('resources/jsons/projects.json'), generate);
 	}
 
 	let prev_width = window.innerWidth;
@@ -195,6 +225,8 @@ function projects_events()
 		}
 	});
 
+	document.addEventListener('languagechange', generate_projects);
+
 	document.querySelectorAll('#projects_section .sort_choices .choice').forEach((el) =>
 	{
 		el.addEventListener('click', () =>
@@ -202,30 +234,28 @@ function projects_events()
 			sort_by = el.innerHTML;
 			generate_projects();
 
-			document.querySelectorAll('#projects_section .sort_choices .choice').forEach((el) =>
+			document.querySelectorAll('#projects_section .sort_choices .choice').forEach((choice) =>
 			{
-				el.classList.remove('selected');
+				choice.classList.remove('selected');
 			});
 
 			el.classList.add('selected');
 		});
 	});
-
 }
 
-function toggleSound(event) {
-    var hoveredVideo = event.target;
+function toggleSound(event)
+{
+	var hoveredVideo = event.target;
 
-    // Check if the event is a mouseenter or mouseleave
-    if (event.type === 'mouseenter' && hoveredVideo.tagName === 'VIDEO') {
-        // Mute all videos
-        document.querySelectorAll('video').forEach(video => video.muted = true);
-
-        // Unmute and set volume for the hovered video
-        hoveredVideo.muted = false;
-        hoveredVideo.volume = 0.6;
-    } else if (event.type === 'mouseleave' && hoveredVideo.tagName === 'VIDEO') {
-        // Mute the video when the mouse leaves
-        hoveredVideo.muted = true;
-    }
+	if (event.type === 'mouseenter' && hoveredVideo.tagName === 'VIDEO')
+	{
+		document.querySelectorAll('video').forEach(video => video.muted = true);
+		hoveredVideo.muted = false;
+		hoveredVideo.volume = 0.6;
+	}
+	else if (event.type === 'mouseleave' && hoveredVideo.tagName === 'VIDEO')
+	{
+		hoveredVideo.muted = true;
+	}
 }

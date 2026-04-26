@@ -55,27 +55,30 @@
 body {
 	caret-color: transparent;
 
-	--header-color: #000000;
-	--header-links-color: #5FA8D3;
-	--buttons-hover-color: #ffffff00;
-	--hover-color: #4682B4;
-	--section-color-1: #d7fcff;
-	--section-color-2: #020202;
-	--footer-color: #000000;
+	--header-color: rgba(4, 17, 32, 0.78);
+	--header-links-color: #ddf8ff;
+	--buttons-hover-color: rgba(111, 225, 255, 0.14);
+	--hover-color: #99e4ff;
+	--section-color-1: #dff8ff;
+	--section-color-2: #05111e;
+	--footer-color: #030c15;
 
-	--title-1-color: #020202;
-	--title-2-color: #d7fcff;
+	--title-1-color: #04243a;
+	--title-2-color: #ecfbff;
 
-	--name-color: #fff2ea;
-	--welcome-color: #D1E8E2;
-	--bio-color: #c8e3ea;
+	--name-color: #fff6ee;
+	--welcome-color: #d1f4ff;
+	--bio-color: #d8eef7;
 
-	--links-color: #EAE0C8;
-	--buttons-color: #00bfff;
-	--border-color: #004B49;
-	--text-color-1: #000000;
-	--text-color-2: #d7fcff;
+	--links-color: #88dfff;
+	--buttons-color: #6fe1ff;
+	--border-color: rgba(36, 110, 145, 0.25);
+	--text-color-1: #123046;
+	--text-color-2: #daf5ff;
 
-	--section-items-color: #195479;
-	--selected-button-color: #D1E8E2;
+	--section-items-color: rgba(10, 59, 91, 0.78);
+	--selected-button-color: #dff8ff;
+	--card-border-light: rgba(255, 255, 255, 0.5);
+	--card-border-dark: rgba(143, 223, 255, 0.18);
+	--card-shadow-dark: 0 24px 70px rgba(0, 0, 0, 0.28);
 }

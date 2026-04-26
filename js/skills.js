@@ -25,7 +25,7 @@ function skills_events()
 
 		for (let i = 0; i < categories.length; i++)
 		{
-			categories[i].addEventListener('click', (e) =>
+			categories[i].addEventListener('click', () =>
 			{
 				choose(i);
 			});
@@ -64,7 +64,6 @@ function skills_events()
 			}
 
 			box.innerHTML = `<div class="menu">${menu}</div><div class="box_content">${box_content}</div>`;
-
 			events();
 		}
 
@@ -89,15 +88,22 @@ function skills_events()
 		}
 	}
 
+	function generate()
+	{
+		read_json(get_localized_json_path('resources/jsons/skills.json'), generate_skills);
+	}
+
 	let prev_width = window.innerWidth;
-	read_json('resources/jsons/skills.json', generate_skills);
+	generate();
 
 	window.addEventListener('resize', () =>
 	{
 		if ((prev_width >= 930 && window.innerWidth <= 930) || (prev_width <= 930 && window.innerWidth >= 930))
 		{
-			read_json('resources/jsons/skills.json', generate_skills);
+			generate();
 			prev_width = window.innerWidth;
 		}
 	});
+
+	document.addEventListener('languagechange', generate);
 }

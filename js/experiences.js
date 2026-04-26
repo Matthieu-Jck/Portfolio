@@ -17,15 +17,41 @@ function experience_events()
 			}
 	}
 
-	window.addEventListener('scroll', (e) =>
+	window.addEventListener('scroll', () =>
 	{
 		animated_check();
 	});
 
-	window.addEventListener('resize', (e) =>
+	window.addEventListener('resize', () =>
 	{
 		animated_check();
 	});
+
+	function get_linked_title(job)
+	{
+		if (is_missing_value(job.link))
+			return `<span class="job_title static">${job.title}</span>`;
+
+		return `<a class="job_title" href="${job.link}" target="_blank">${job.title}</a>`;
+	}
+
+	function get_job_view(job)
+	{
+		const has_link = !is_missing_value(job.link);
+		const has_video = !is_missing_value(job.video) && !is_safari();
+		const inner = `
+			<img src="${job.image}" alt="${job.title.toLowerCase()} image" width="1440px" height="810px"/>
+			${has_video ? `
+			<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+			<video loop muted preload="metadata">
+				<source src="${job.video}" type="video/mp4"/>
+			</video>` : ''}`;
+
+		if (!has_link)
+			return `<div class="job_media">${inner}</div>`;
+
+		return `<a ${is_safari() ? 'class="safari_fix"' : ''} href="${job.link}" target="_blank">${inner}</a>`;
+	}
 
 	function add_job(job, inverted)
 	{
@@ -41,23 +67,15 @@ function experience_events()
 					<div class="job_text">
 						<div class="type">
 							<span>${job.date}</span>
-							<span>•</span>
+							<span>&bull;</span>
 							<span>${job.type}</span>
 						</div>
-						<a class="job_title" href="${job.link}" target="_blank">${job.title}</a>
+						${get_linked_title(job)}
 						<div class="text"><p>${job.description}</p></div>
-						<div class="tags">` + tags + `</div>
+						<div class="tags">${tags}</div>
 					</div>
 					<div class="job_view">
-						<a ${is_safari() ? 'class="safari_fix"' : ''} href="${job.link}" target="_blank">
-							<img src="${job.image}" alt="${job.title.toLowerCase()} image" width="1440px" height="810px"/>
-							` + (job.video == 'none' || is_safari() ? '' : `
-							<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-							<video loop muted preload="metadata">
-								<source src="${job.video}" type="video/mp4"/>
-							</video>
-							`) + `
-						</a>
+						${get_job_view(job)}
 					</div>
 				</div>`;
 		}
@@ -66,15 +84,15 @@ function experience_events()
 		{
 			document.querySelector('#experience_section .experience_content').innerHTML += `
 				<div class="animated job ${is_safari() ? 'safari_fix' : ''}" style="background-image: url(${job.image});">
-					<div class="job_text"">
+					<div class="job_text">
 						<div class="type">
 							<span>${job.type}</span>
-							<span>•</span>
+							<span>&bull;</span>
 							<span>${job.date}</span>
 						</div>
-						<a class="job_title" href="${job.link}" target="_blank">${job.title}</a>
+						${get_linked_title(job)}
 						<div class="text"><p>${job.description}</p></div>
-						<div class="tags">` + tags + `</div>
+						<div class="tags">${tags}</div>
 					</div>
 				</div>`;
 		}
@@ -103,7 +121,7 @@ function experience_events()
 
 	function generate_experience()
 	{
-		read_json("resources/jsons/experiences.json", generate);
+		read_json(get_localized_json_path('resources/jsons/experiences.json'), generate);
 	}
 
 	let prev_width = window.innerWidth;
@@ -118,15 +136,17 @@ function experience_events()
 		}
 	});
 
+	document.addEventListener('languagechange', generate_experience);
+
 	document.querySelectorAll('#experience_section .sort_choices .choice').forEach((el) =>
 	{
 		el.addEventListener('click', () =>
 		{
 			generate_experience();
 
-			document.querySelectorAll('#experience_section .sort_choices .choice').forEach((el) =>
+			document.querySelectorAll('#experience_section .sort_choices .choice').forEach((choice) =>
 			{
-				el.classList.remove('selected');
+				choice.classList.remove('selected');
 			});
 
 			el.classList.add('selected');

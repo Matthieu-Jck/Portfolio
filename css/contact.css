@@ -1,9 +1,10 @@
 #contact_section
 {
-	background-color: var(--section-color-1);
+	background:
+		linear-gradient(180deg, #dff8ff 0%, #d3f1fa 100%);
 }
 
-#contact_section .content.leaning 
+#contact_section .content.leaning
 {
 	margin-top: calc(calc(clamp(110px, 7vw, 130px) + 3.3vw) * 1.65);
 	margin-bottom: calc(clamp(100px, 7vw, 130px) * 2);
@@ -21,6 +22,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
+	flex-wrap: wrap;
 }
 
 @media screen and (max-width: 780px)
@@ -45,17 +47,23 @@
 	align-items: center;
 	justify-content: center;
 	padding: 25px 10px 25px 25px;
-	border-radius: 20px;
-	background-color: white;
-	box-shadow: 0px 0px 10px rgba(28, 28, 51, 0.2);
+	border-radius: 24px;
+	background: rgba(255, 255, 255, 0.72);
+	border: 1px solid var(--card-border-light);
+	box-shadow: 0px 20px 45px rgba(28, 28, 51, 0.12);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
 	gap: 15px;
 	text-decoration: none;
-	transition: padding 0.5s ease-in-out;
+	transition: padding 0.4s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 #contact_section .social_link:hover
 {
 	padding-right: 25px;
+	transform: translateY(-6px);
+	box-shadow: 0px 24px 52px rgba(28, 28, 51, 0.16);
+	background-color: rgba(255, 255, 255, 0.88);
 }
 
 #contact_section .social_link img
@@ -67,7 +75,7 @@
 {
 	overflow: hidden;
 	width: 0px;
-	transition: width 0.5s ease-in-out;
+	transition: width 0.45s ease-in-out;
 }
 
 #contact_section .social_link:hover .social_text
@@ -88,6 +96,7 @@
 	#contact_section .social_link:hover
 	{
 		padding-right: 10px;
+		transform: none;
 	}
 
 	#contact_section .social_link:hover .social_text

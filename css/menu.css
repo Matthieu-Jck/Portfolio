@@ -8,10 +8,12 @@
 	z-index: 100;
 	width: clamp(0px, 100%, 400px);
 	height: 100%;
-	background-color: var(--header-color);
+	background:
+		linear-gradient(180deg, rgba(3, 12, 22, 0.95) 0%, rgba(5, 17, 30, 0.98) 100%);
 	right: 0px;
 	transform: translateX(clamp(0px, 100%, 400px));
 	transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+	border-left: 1px solid rgba(143, 223, 255, 0.12);
 }
 
 #menu_div .menu_icon
@@ -47,6 +49,7 @@
 #menu_div .menu li
 {
 	display: flex;
+	justify-content: center;
 }
 
 #menu_div .menu a
@@ -84,4 +87,22 @@
 	height: 15px;
 	margin-left: 15px;
 	transform: rotate(-90deg);
+}
+
+#menu_div .menu .language_item
+{
+	width: 100%;
+}
+
+#menu_div .menu .language_toggle
+{
+	width: 100%;
+	justify-content: center;
+	padding: 6px;
+}
+
+#menu_div .menu .language_option
+{
+	min-width: 64px;
+	font-size: 14px;
 }

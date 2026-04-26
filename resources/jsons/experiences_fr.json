@@ -3,27 +3,27 @@
 	[
 		{
 			"date": "2021-2022",
-			"type": "Ingénieur Logiciel",
+			"type": "Ing\u00e9nieur logiciel",
 			"title": "Capgemini",
-			"description": "Aérospatial : Développement du logiciel du segment sol d’une mission satellitaire d’observation de la Terre. Architecture Client/Serveur.",
+			"description": "A\u00e9rospatial : d\u00e9veloppement du logiciel du segment sol d'une mission satellitaire d'observation de la Terre pour Airbus Defense and Space. Architecture client/serveur.",
 			"tags":
 			[
 				{ "name": "Java", "url": "https://www.java.com/en/" },
-				{ "name": "Eclipse", "url": "https://eclipseide.org/"},
+				{ "name": "Eclipse", "url": "https://eclipseide.org/" },
 				{ "name": "WildFly / JBoss", "url": "https://www.wildfly.org/" },
 				{ "name": "PostGreSQL", "url": "https://www.postgresql.org/" },
 				{ "name": "Hibernate", "url": "https://hibernate.org/" },
-				{ "name": "OpenLDAP","url": "https://en.wikipedia.org/wiki/OpenLDAP"}
+				{ "name": "OpenLDAP", "url": "https://en.wikipedia.org/wiki/OpenLDAP" }
 			],
 			"link": "https://www.capgemini.com/",
-			"video": "aucune",
+			"video": "none",
 			"image": "resources/images/experiences/Capgemini.webp"
 		},
 		{
 			"date": "2022-2024",
-			"type": "Ingénieur Logiciel / FullStack",
+			"type": "Ing\u00e9nieur logiciel / full-stack",
 			"title": "Infotel",
-			"description": "Aéronautique : Développement de la suite Orlando, une solution Web et iOS pour la gestion des compagnies aériennes, et développement d’une application web pour la gestion du CNRS.",
+			"description": "A\u00e9ronautique : d\u00e9veloppement de la suite Orlando, une solution web et iOS pour la gestion des compagnies a\u00e9riennes, ainsi que d'une application web pour la gestion du CNRS.",
 			"tags":
 			[
 				{ "name": "Java", "url": "https://www.java.com/en/" },
@@ -35,14 +35,14 @@
 				{ "name": "Scrum", "url": "https://www.scrum.org/" }
 			],
 			"link": "https://infotel-consulting.co.uk/",
-			"video": "aucune",
+			"video": "none",
 			"image": "resources/images/experiences/Infotel.webp"
 		},
 		{
 			"date": "2025",
-			"type": "Développeur Web",
+			"type": "D\u00e9veloppeur web",
 			"title": "Freelance",
-			"description": "Conception, développement et intégration de deux sites web pour un sanctuaire animalier caritatif et une agence de voyage à Perth, Australie.",
+			"description": "Conception, d\u00e9veloppement et int\u00e9gration de deux sites web pour un sanctuaire animalier caritatif et une agence de voyage \u00e0 Perth, en Australie.",
 			"tags":
 			[
 				{ "name": "Wordpress", "url": "https://www.wordpress.com/" },
@@ -50,7 +50,7 @@
 				{ "name": "Figma", "url": "https://www.figma.com" }
 			],
 			"link": "https://thetravellingsoul.com.au/",
-			"video": "aucune",
+			"video": "none",
 			"image": "resources/images/experiences/TheTravellingSoul.png"
 		}
 	]

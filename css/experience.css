@@ -1,6 +1,9 @@
 #experience_section
 {
-	background-color: var(--section-color-2);
+	background:
+		radial-gradient(circle at 10% 12%, rgba(111, 225, 255, 0.1), transparent 24%),
+		radial-gradient(circle at 88% 18%, rgba(79, 136, 255, 0.1), transparent 24%),
+		linear-gradient(180deg, #04101b 0%, #06131f 100%);
 }
 
 .experience_end
@@ -53,20 +56,20 @@
 
 #experience_section .sort_choices .choice:hover
 {
-	background-color: var(--bio-color);
+	background-color: rgba(111, 225, 255, 0.12);
 }
 
 #experience_section .sort_choices .choice.selected
 {
-	color: var(--section-items-color);
-	background-color: var(--links-color);
+	color: #04111e;
+	background-color: var(--selected-button-color);
 	cursor: default;
 	pointer-events: none;
 }
 
 #experience_section .sort_choices .choice.selected:hover
 {
-	background-color: var(--links-color);
+	background-color: var(--selected-button-color);
 }
 
 #experience_section .experience_content
@@ -119,21 +122,26 @@
 	align-items: center;
 }
 
-#experience_section .job_view a
+#experience_section .job_view a,
+#experience_section .job_view .job_media
 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: calc(clamp(400px, 40vw, 600px) * 1.05);
 	overflow: hidden;
-	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
-	border-radius: 15px;
-	transition: filter 0.3s ease;
+	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.45));
+	border-radius: 24px;
+	border: 1px solid var(--card-border-dark);
+	background: rgba(3, 15, 25, 0.35);
+	transition: filter 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 
 #experience_section .job_view a:hover
 {
-	filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.7));
+	filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.65));
+	transform: translateY(-6px);
+	border-color: rgba(143, 223, 255, 0.35);
 }
 
 #experience_section .job_view video
@@ -190,6 +198,7 @@
 
 #experience_section .job_text .job_title
 {
+	display: inline-block;
 	font-family: calibre_semi_bold;
 	font-size: 32px;
 	color: var(--title-2-color);
@@ -199,43 +208,49 @@
 	transition: color 0.2s ease;
 }
 
+#experience_section .job_text .job_title.static
+{
+	cursor: default;
+}
+
 #experience_section .inverted .job_text .job_title
 {
 	margin-left: 0px;
 	margin-right: 15px;
 }
 
-#experience_section .job_text .job_title:hover
+#experience_section .job_text a.job_title:hover
 {
 	color: var(--links-color);
 }
 
 #experience_section .job_text .text
 {
-	background-color: var(--section-items-color);
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 15px;
+	background: rgba(8, 53, 82, 0.72);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid var(--card-border-dark);
+	box-shadow: var(--card-shadow-dark);
+	border-radius: 24px;
 	padding: 25px 25px 25px 25px;
 	margin-bottom: 19px;
-	transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 
 #experience_section .job_text .text:hover
 {
-	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 26px 80px rgba(0, 0, 0, 0.38);
+	transform: translateY(-4px);
+	border-color: rgba(143, 223, 255, 0.28);
 }
 
 #experience_section .job_text .text p
 {
 	font-family: calibre_regular;
 	font-size: 20px;
-	text-align: justify;
+	text-align: left;
 	color: var(--text-color-2);
-}
-
-#experience_section .inverted .job_text .text p
-{
-	text-align: justify;
+	line-height: 1.45;
 }
 
 #experience_section .job_text .tags
@@ -260,102 +275,21 @@
 #experience_section .job_text .tags a
 {
 	font-family: raleway_semi_bold;
-	font-size: 16px;
+	font-size: 15px;
 	color: var(--links-color);
 	text-decoration: none;
 	opacity: 1;
-	padding: 3px 6px 3px 6px;
+	padding: 6px 10px;
 	white-space: nowrap;
-	transition: opacity 0.2s ease;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.05);
+	transition: opacity 0.2s ease, background-color 0.2s ease;
 }
 
 #experience_section .job_text .tags a:hover
 {
-	opacity: 0.5;
-}
-
-#experience_section .job_text .links
-{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	margin-left: 15px;
-	gap: 20px;
-}
-
-#experience_section .inverted .job_text .links
-{
-	margin-left: 0px;
-	margin-right: 15px;
-}
-
-#experience_section .job_text .links .github
-{
-	--color: rgb(181, 184, 192);
-}
-
-#experience_section .job_text .links .test
-{
-	--color: rgb(41, 168, 99);
-}
-
-#experience_section .job_text .links svg
-{
-	width: 21px;
-	fill: none;
-	stroke-width: 1.9px;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-	stroke: var(--color);
 	opacity: 1;
-	transition: opacity 0.2s ease;
-}
-
-#experience_section .job_text .links svg:hover
-{
-	opacity: 0.6;
-}
-
-#experience_section .job_text .links a
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#experience_section .job_text .links .bubble
-{
-	pointer-events: none;
-	position: absolute;
-	text-align: center;
-	bottom: -45px;
-	color: var(--section-items-color);
-	padding: 6px 12px 6px 12px;
-	background-color: var(--color);
-	font-family: raleway_bold;
-	white-space: nowrap;
-	font-size: 15px;
-	border-radius: 20px;
-	opacity: 0;
-	transition: opacity 0.3s ease;
-}
-
-#experience_section .job_text .links .bubble::after
-{
-	pointer-events: none;
-	content: "";
-	position: absolute;
-	bottom: 100%;
-	left: 50%;
-	margin-left: -7px;
-	border-width: 7px;
-	border-style: solid;
-	border-color: transparent transparent var(--color) transparent;
-}
-
-#experience_section .job_text .links a:hover .bubble
-{
-	opacity: 0.8;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 .lds-ring
@@ -401,28 +335,14 @@
 
 @-webkit-keyframes lds-ring
 {
-	0%
-	{
-		transform: rotate(0deg);
-	}
-
-	100%
-	{
-		transform: rotate(360deg);
-	}
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
 
 @keyframes lds-ring
 {
-	0%
-	{
-		transform: rotate(0deg);
-	}
-
-	100%
-	{
-		transform: rotate(360deg);
-	}
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
 
 @media screen and (max-width: 780px)
@@ -431,9 +351,11 @@
 	{
 		background-size: cover;
 		background-position: center;
-		border-radius: 15px;
+		border-radius: 24px;
 		filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
 		transition: filter 0.3s ease;
+		border: 1px solid rgba(143, 223, 255, 0.12);
+		overflow: hidden;
 	}
 
 	#experience_section .job:hover
@@ -447,8 +369,8 @@
 		margin-left: 0px;
 		margin-right: 0px;
 		padding: 60px 40px 60px 40px;
-		background-color: rgba(52, 52, 102, 0.75);
-		border-radius: 15px;
+		background: linear-gradient(180deg, rgba(6, 26, 45, 0.88), rgba(7, 45, 70, 0.78));
+		border-radius: 24px;
 	}
 
 	@media screen and (max-width: 500px)
@@ -474,12 +396,14 @@
 		background: none;
 		box-shadow: none;
 		border-radius: 0px;
+		border: none;
 		padding: 10px 0px 8px 0px;
 	}
 
 	#experience_section .job_text .text:hover
 	{
 		box-shadow: none;
+		transform: none;
 	}
 
 	#experience_section .job_text .text p
@@ -490,15 +414,5 @@
 	#experience_section .job_text .tags
 	{
 		margin-left: -6px;
-	}
-
-	#experience_section .job_text .links
-	{
-		margin-left: 0px;
-	}
-
-	#experience_section .job_text .links .bubble
-	{
-		bottom: 15px;
 	}
 }

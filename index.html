@@ -23,11 +23,11 @@
 	<meta property="og:site_name" content="Matthieu Jacques Website">
 	<meta property="og:description" content="Matthieu Jacques Website">
 
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<script src="js/properties.js"></script>
 	<script src="js/utils.js"></script>
+	<script src="js/language.js"></script>
 
 	<script src="js/header.js"></script>
 	<script src="js/home.js"></script>
@@ -42,7 +42,6 @@
 	<script src="js/script.js"></script>
 	<script src="js/age_computation.js"></script>
 
-
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<link rel="stylesheet" type="text/css" href="css/rain.css">
@@ -50,36 +49,41 @@
 	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/water.css">
-
 </head>
 
 <body>
 	<div id="loading_screen"></div>
 	<div id="safari_warning">
-		<p>
+		<p data-i18n="warnings.safari">
 			This website is not optimized for this browser.
 			For an optimal experience, please use Chrome or Firefox.
 		</p>
-		<button id="dismiss_safari_warning">Dismiss</button>
+		<button id="dismiss_safari_warning" data-i18n="actions.dismiss">Dismiss</button>
 	</div>
 
 	<div id="lcp">
 		<p>LCP</p>
 	</div>
+
 	<div id="header_div">
 		<header id="header">
 			<nav class="nav">
 				<div class="menu">
 					<ol>
-						<li class="home animated"><a class="not_button" href="#home">Home</a></li>
-						<li class="about animated"><a class="not_button" href="#about">About</a></li>
-						<li class="projects animated"><a class="not_button" href="#projects">Projects</a></li>
-						<li class="skills animated"><a class="not_button" href="#skills">Skills</a></li>
-						<li class="experience animated"><a class="not_button" href="#experience">Experience</a></li>
-						<!-- <li class="sketchbook animated"><a class="not_button" href="sketchbook/index.html" target="_blank">Sketchbook</a></li>-->
+						<li class="home animated"><a class="not_button" href="#home" data-i18n="nav.home">Home</a></li>
+						<li class="about animated"><a class="not_button" href="#about" data-i18n="nav.about">About</a></li>
+						<li class="projects animated"><a class="not_button" href="#projects" data-i18n="nav.projects">Projects</a></li>
+						<li class="skills animated"><a class="not_button" href="#skills" data-i18n="nav.skills">Skills</a></li>
+						<li class="experience animated"><a class="not_button" href="#experience" data-i18n="nav.experience">Experience</a></li>
+						<li class="language animated language_item">
+							<div class="language_toggle" role="group" aria-label="Language switcher">
+								<button type="button" class="language_option" data-language-option="en">EN</button>
+								<button type="button" class="language_option" data-language-option="fr">FR</button>
+							</div>
+						</li>
 						<li class="contact animated">
 							<a class="button" href="#contact">
-								<p>Contact</p>
+								<p data-i18n="nav.contact">Contact</p>
 								<svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39">
 									<g>
 										<path class="path_1" d="M8.9 12.4 L8.9 12.4" />
@@ -106,15 +110,20 @@
 		</svg>
 		<div class="menu">
 			<ol>
-				<li class="home"><a class="not_button" href="#home">Home</a></li>
-				<li class="about"><a class="not_button" href="#about">About</a></li>
-				<li class="projects"><a class="not_button" href="#projects">Projects</a></li>
-				<li class="skills"><a class="not_button" href="#skills">Skills</a></li>
-				<li class="experience"><a class="not_button" href="#experience">Experience</a></li>
-				<!--<li class="sketchbook"><a class="button" href="sketchbook/index.html">Sketchbook</a></li>-->
+				<li class="home"><a class="not_button" href="#home" data-i18n="nav.home">Home</a></li>
+				<li class="about"><a class="not_button" href="#about" data-i18n="nav.about">About</a></li>
+				<li class="projects"><a class="not_button" href="#projects" data-i18n="nav.projects">Projects</a></li>
+				<li class="skills"><a class="not_button" href="#skills" data-i18n="nav.skills">Skills</a></li>
+				<li class="experience"><a class="not_button" href="#experience" data-i18n="nav.experience">Experience</a></li>
+				<li class="language_item">
+					<div class="language_toggle" role="group" aria-label="Language switcher">
+						<button type="button" class="language_option" data-language-option="en">EN</button>
+						<button type="button" class="language_option" data-language-option="fr">FR</button>
+					</div>
+				</li>
 				<li class="contact">
 					<a class="button" href="#contact">
-						<p>Contact</p>
+						<p data-i18n="nav.contact">Contact</p>
 						<svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39">
 							<g>
 								<path class="path_1" d="M8.9 12.4 L8.9 12.4" />
@@ -127,14 +136,10 @@
 		</div>
 	</div>
 
-
-	<!-- ====================================  CONTENT ==================================== -->
 	<div id="content">
 		<main id="main">
 			<a id="home"></a>
 
-
-			<!-- HOME SECTION -->
 			<section class="section" id="home_section">
 				<div id="particles"></div>
 				<div class="wave-container">
@@ -161,19 +166,18 @@
 					<div class="rain back-row"></div>
 
 					<br>
-					<span class="welcome animated"> Welcome, my name is</span>
+					<span class="welcome animated" data-i18n="home.welcome">Welcome, my name is</span>
 					<span class="name animated">Matthieu Jacques.</span>
-					<span class="title animated">Software Engineer</span>
-					<p class="bio animated">
-						I'm a <span id="age">20</span> years old, creative Software Engineer and Full-Stack Developer
-						from France.
-						I studied computer science at <a class="link" href="https://www.insa-toulouse.fr/en/"
-							target="_blank">INSA Toulouse</a>.
-						I am open to any exciting opportunity.
+					<span class="title animated" data-i18n="home.title">Software Engineer</span>
+					<p class="bio animated" data-i18n-html="home.bio">
+						I'm a <span id="age">20</span>-year-old creative software engineer and full-stack developer from
+						France. I studied computer science at
+						<a class="link" href="https://www.insa-toulouse.fr/en/" target="_blank">INSA Toulouse</a> and I
+						am open to exciting opportunities.
 					</p>
 					<div class="see-more_button animated">
 						<a class="button" href="#about">
-							<p>See more</p>
+							<p data-i18n="actions.seeMore">See more</p>
 							<svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39">
 								<g>
 									<path class="path_1" d="M8.9 12.4 L8.9 12.4" />
@@ -185,70 +189,59 @@
 				</div>
 			</section>
 
-			<!-- ABOUT SECTION -->
 			<link rel="stylesheet" type="text/css" href="css/about.css" />
 
 			<a id="about"></a>
 			<section class="section" id="about_section">
 				<div class="content">
-					<span class="section_title">About me : </span>
+					<span class="section_title" data-i18n="about.title">About me</span>
 					<div class="about_content">
-						<div class="selector">
-
-						</div>
-						<p class="p_1">
-							I’m a <b>software engineer</b> passionate about turning ideas into engaging, functional
-							solutions across
-							<b>web development</b>, <b>game design</b>, and <b>AI</b>.
+						<div class="selector"></div>
+						<p class="p_1" data-i18n-html="about.body">
+							I'm a <b>software engineer</b> passionate about turning ideas into engaging, functional
+							solutions across <b>web development</b>, <b>game design</b>, and <b>AI</b>.
 							<br><br>
 							After earning my degree at <b>INSA Toulouse</b>, I gained three years of experience in the
-							<b>aerospace and aeronautics industry</b>
-							with companies such as Airbus D&S, Thales, and Air France, working on
-							high-precision, mission-critical projects.
+							<b>aerospace and aeronautics industry</b> with companies such as Airbus D&amp;S, Thales, and
+							Air France, working on high-precision, mission-critical projects.
 							<br><br>
 							I then spent a year in Australia <b>freelancing</b> in <b>web design</b> and tutoring
-							computer science and mathematics, which strengthened my client-facing skills
-							as well as my English to a fluent and professional level.
-							I thrive in collaborative environments, enjoy customer interaction, and value
-							clear communication as much as technical excellence.
+							computer science and mathematics, which strengthened my client-facing skills as well as my
+							English to a fluent and professional level.
 							<br><br>
-							This <b>portfolio</b> highlights the projects and experiences that have shaped my journey.
-							<br><br>
+							I thrive in collaborative environments, enjoy customer interaction, and value clear
+							communication as much as technical excellence. This <b>portfolio</b> highlights the projects
+							and experiences that have shaped my journey.
 						</p>
 
 						<div class="photo">
 							<img class="animated" src="resources/images/Photo.webp" alt="photo" width="700px"
 								height="700px" />
 						</div>
-
 					</div>
 				</div>
 			</section>
 			<div class="section_end about_end"></div>
 
-
-			<!-- PROJECTS SECTION -->
 			<link rel="stylesheet" type="text/css" href="css/projects.css" />
 			<link rel="stylesheet" type="text/css" href="css/other_projects.css" />
 
 			<a id="projects"></a>
 			<section class="section" id="projects_section">
 				<div class="content leaning">
-					<span class="section_title">Some of my Projects</span>
+					<span class="section_title" data-i18n="projects.title">Some of my projects</span>
 					<div class="projects_content"></div>
 					<div class="other_projects_content"></div>
 				</div>
 			</section>
 			<div class="section_end projects_end"></div>
 
-
-			<!-- SKILLS SECTION -->
 			<link rel="stylesheet" type="text/css" href="css/skills.css" />
 
 			<a id="skills"></a>
 			<section class="section" id="skills_section">
 				<div class="content leaning">
-					<span class="section_title">Skills :</span>
+					<span class="section_title" data-i18n="skills.title">Skills</span>
 					<div class="skills_content">
 						<div class="box"></div>
 					</div>
@@ -261,7 +254,7 @@
 			<a id="experience"></a>
 			<section class="section" id="experience_section">
 				<div class="content leaning">
-					<span class="section_title">Working experiences:</span>
+					<span class="section_title" data-i18n="experience.title">Working experience</span>
 					<div class="experience_content"></div>
 				</div>
 			</section>
@@ -269,11 +262,10 @@
 
 			<link rel="stylesheet" type="text/css" href="css/contact.css" />
 
-			<!-- CONTACT SECTION -->
 			<a id="contact"></a>
 			<section class="section" id="contact_section">
 				<div class="content leaning">
-					<span class="section_title">Contacts : </span>
+					<span class="section_title" data-i18n="contact.title">Contact</span>
 					<div class="contact_content">
 						<div class="social_line">
 							<a class="social_link" href="https://www.linkedin.com/in/matthieu-jck" target="_blank"
@@ -314,12 +306,12 @@
 					<div class="footer_content">
 						<a class="footer_licence" href="https://github.com/Matthieu-Jck/Portfolio/blob/main/LICENSE"
 							target="_blank">
-							<span>© Matthieu Jacques</span>
+							<span data-i18n="footer.license">© Matthieu Jacques</span>
 							<img src="resources/images/open-source-icon.svg" alt="license" width="20px" height="20px">
-							<span>MIT license 2024</span>
+							<span data-i18n="footer.mit">MIT License 2024</span>
 						</a>
-						<a class="" href="https://github.com/matthieu-jck/Portfolio" target="_blank">
-							<span>See source code on my GitHub</span>
+						<a href="https://github.com/matthieu-jck/Portfolio" target="_blank">
+							<span data-i18n="footer.source">See source code on my GitHub</span>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.05 20.31">
 								<g>
 									<path
