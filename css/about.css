@@ -1,11 +1,15 @@
 #about_section
 {
-	background-color: var(--section-color-1);
+	background:
+		radial-gradient(circle at 10% 12%, rgba(111, 225, 255, 0.22), transparent 24%),
+		radial-gradient(circle at 88% 18%, rgba(79, 136, 255, 0.14), transparent 22%),
+		linear-gradient(180deg, #ecfdff 0%, #e4fbff 42%, #dcf6fd 100%);
 }
 
 .about_end
 {
-	background-color: var(--section-color-1);
+	background:
+		linear-gradient(180deg, #e3fbff 0%, #dcf6fd 100%);
 }
 
 #about_section .content

@@ -34,6 +34,27 @@ function skills_events()
 		choose(0);
 	}
 
+	function get_skills_markup(skills, fill_grid = false)
+	{
+		let markup = '';
+
+		for (let skill of skills)
+		{
+			markup += `<a class="skill" href="${skill.link}" target="_blank">
+				<img src="${skill.logo}" alt="${skill.name.toLowerCase()}" width="190px" height="190px"/>
+				<span>${skill.name}</span>
+			</a>`;
+		}
+
+		if (fill_grid)
+		{
+			for (let i = 0; i < Math.max(0, 9 - skills.length); i++)
+				markup += '<div class="skill skill_placeholder" aria-hidden="true"></div>';
+		}
+
+		return markup;
+	}
+
 	function generate_skills(my_data)
 	{
 		let box = document.querySelector('#skills_section .box');
@@ -49,18 +70,7 @@ function skills_events()
 			for (let category of my_data.skills_categories)
 			{
 				menu += `<div class="category">${category.name}</div>`;
-
-				let skills = '';
-
-				for (let skill of category.skills)
-				{
-					skills += `<a class="skill" href="${skill.link}" target="_blank">
-						<img src="${skill.logo}" alt="${skill.name.toLowerCase()}" width="190px" height="190px"/>
-						<span>${skill.name}</span>
-					</a>`;
-				}
-
-				box_content += `<div class="skills_list">${skills}</div>`;
+				box_content += `<div class="skills_list">${get_skills_markup(category.skills, true)}</div>`;
 			}
 
 			box.innerHTML = `<div class="menu">${menu}</div><div class="box_content">${box_content}</div>`;
@@ -72,18 +82,7 @@ function skills_events()
 			for (let category of my_data.skills_categories)
 			{
 				box.innerHTML += `<div class="category_title">${category.name}</div>`;
-
-				let skills = '';
-
-				for (let skill of category.skills)
-				{
-					skills += `<a class="skill" href="${skill.link}" target="_blank">
-						<img src="${skill.logo}" alt="${skill.name.toLowerCase()}" width="190px" height="190px"/>
-						<span>${skill.name}</span>
-					</a>`;
-				}
-
-				box.innerHTML += `<div class="box_content"><div class="skills_list">${skills}</div></div>`;
+				box.innerHTML += `<div class="box_content"><div class="skills_list">${get_skills_markup(category.skills)}</div></div>`;
 			}
 		}
 	}
@@ -99,10 +98,9 @@ function skills_events()
 	window.addEventListener('resize', () =>
 	{
 		if ((prev_width >= 930 && window.innerWidth <= 930) || (prev_width <= 930 && window.innerWidth >= 930))
-		{
 			generate();
-			prev_width = window.innerWidth;
-		}
+
+		prev_width = window.innerWidth;
 	});
 
 	document.addEventListener('languagechange', generate);

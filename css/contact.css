@@ -1,7 +1,9 @@
 #contact_section
 {
 	background:
-		linear-gradient(180deg, #dff8ff 0%, #d3f1fa 100%);
+		radial-gradient(circle at 10% 12%, rgba(111, 225, 255, 0.22), transparent 24%),
+		radial-gradient(circle at 88% 18%, rgba(79, 136, 255, 0.14), transparent 24%),
+		linear-gradient(180deg, #ebfdff 0%, #def8ff 44%, #d2eef8 100%);
 }
 
 #contact_section .content.leaning
