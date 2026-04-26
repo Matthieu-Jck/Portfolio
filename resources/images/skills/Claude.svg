@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="claudeTitle">
+  <title id="claudeTitle">Claude</title>
+  <defs>
+    <linearGradient id="claudeBg" x1="36" y1="36" x2="220" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6d3b8"/>
+      <stop offset="1" stop-color="#c96b3b"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="208" height="208" rx="52" fill="url(#claudeBg)"/>
+  <path d="M164 84c-11-10-23-15-39-15-34 0-57 24-57 59s23 59 57 59c16 0 28-5 39-15l-13-18c-7 6-14 10-25 10-18 0-31-14-31-36s13-36 31-36c11 0 18 4 25 10z" fill="#2a160f"/>
+  <circle cx="182" cy="92" r="14" fill="#f6efe9" opacity="0.9"/>
+</svg>

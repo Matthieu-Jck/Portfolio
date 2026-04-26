@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="jenkinsTitle">
+  <title id="jenkinsTitle">Jenkins</title>
+  <circle cx="128" cy="128" r="104" fill="#f5f8fb"/>
+  <circle cx="128" cy="128" r="98" fill="none" stroke="#d8e2ec" stroke-width="8"/>
+  <circle cx="128" cy="92" r="28" fill="#f2d2bf"/>
+  <path d="M100 122h56v54c0 15-12 28-28 28s-28-13-28-28z" fill="#7b4032"/>
+  <path d="M88 134c10 13 25 21 40 21s30-8 40-21v38c0 21-18 38-40 38s-40-17-40-38z" fill="#ffffff"/>
+  <path d="M96 100c6-24 25-39 32-39 7 0 26 15 32 39-13-8-23-12-32-12s-19 4-32 12z" fill="#5c2d24"/>
+  <rect x="96" y="152" width="64" height="16" rx="8" fill="#d33833"/>
+  <rect x="106" y="168" width="44" height="12" rx="6" fill="#2e3b4e"/>
+  <circle cx="112" cy="110" r="4" fill="#2e3b4e"/>
+  <circle cx="144" cy="110" r="4" fill="#2e3b4e"/>
+</svg>

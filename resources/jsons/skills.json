@@ -36,9 +36,9 @@
 					"link": "https://nodejs.org/en/"
 				},
 				{
-					"name": "Express",
-					"logo": "resources/images/skills/Express.svg",
-					"link": "https://expressjs.com/"
+					"name": "Kafka",
+					"logo": "resources/images/skills/Kafka.svg",
+					"link": "https://kafka.apache.org/"
 				},
 				{
 					"name": "C#",
@@ -104,7 +104,7 @@
 			]
 		},
 		{
-			"name": "DevOps",
+			"name": "DevOps & Cloud",
 			"skills":
 			[
 				{
@@ -123,14 +123,19 @@
 					"link": "https://kubernetes.io/"
 				},
 				{
+					"name": "AWS",
+					"logo": "resources/images/skills/AWS.svg",
+					"link": "https://aws.amazon.com/"
+				},
+				{
+					"name": "Jenkins",
+					"logo": "resources/images/skills/Jenkins.svg",
+					"link": "https://www.jenkins.io/"
+				},
+				{
 					"name": "Unix",
 					"logo": "resources/images/skills/Unix.svg",
 					"link": "https://en.wikipedia.org/wiki/Unix"
-				},
-				{
-					"name": "CMake",
-					"logo": "resources/images/skills/CMake.svg",
-					"link": "https://cmake.org/"
 				}
 			]
 		},
@@ -159,9 +164,9 @@
 					"link": "https://keras.io/"
 				},
 				{
-					"name": "Hadoop",
-					"logo": "resources/images/skills/Hadoop.svg",
-					"link": "https://hadoop.apache.org/"
+					"name": "Claude",
+					"logo": "resources/images/skills/Claude.svg",
+					"link": "https://www.anthropic.com/claude"
 				},
 				{
 					"name": "Matlab",
