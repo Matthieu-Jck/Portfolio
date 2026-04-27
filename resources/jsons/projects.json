@@ -96,7 +96,7 @@
 			"date": 2024,
 			"type": "Personal Project",
 			"title": "BetChess",
-			"description": "BetChess is an online multiplayer Chess app in which each turn, you bet on your opponent's next move. If guessed correctly, you play twice next turn. \n    (DISCLAIMER: the hosting server for this project is currently a free plan, and can take some time to load)",
+			"description": "BetChess is an online multiplayer Chess app in which each turn, you bet on your opponent's next move. If guessed correctly, you play twice next turn.",
 			"tags":
 			[
 				{ "name": "JavaScript", "url": "https://en.wikipedia.org/wiki/JavaScript" },
